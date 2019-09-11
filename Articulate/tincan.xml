@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tincan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://projecttincan.com/tincan.xsd">
+	<activities>
+		<activity id="6X9uS05rLUb_course_id" type="course">
+			<name lang="und">The Solar System</name>
+			<description lang="und" />
+			<launch lang="und">story.html</launch>
+		</activity>
+		<activity id="5cv16q9HG8Q" type="objective">
+			<name lang="und">Results</name>
+			<description lang="und">Results</description>
+		</activity>
+		<activity id="5jIOVMY3lI7" type="module">
+			<name lang="und">What it the third planet from the Sun</name>
+			<description lang="und">What it the third planet from the Sun</description>
+		</activity>
+		<activity id="5jIOVMY3lI7.a05ae619-d0e3-4755-9cf0-c944c8861581" type="cmi.interaction">
+			<name lang="und">What it the third planet from the Sun</name>
+			<description lang="und">What it the third planet from the Sun</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_5uToT0BW3SC</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_5uToT0BW3SC</id>
+					<description lang="und">Earth</description>
+				</component>
+				<component>
+					<id>choice_5uBsa57TorE</id>
+					<description lang="und">Venus</description>
+				</component>
+				<component>
+					<id>choice_6Ft1rxqy1KK</id>
+					<description lang="und">Mars</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="6Uo7vTiQ6UT" type="module">
+			<name lang="und">Select the planets from the list below.</name>
+			<description lang="und">Select the planets from the list below.</description>
+		</activity>
+		<activity id="6Uo7vTiQ6UT.675caf81-6862-461d-b401-76a9f043435a" type="cmi.interaction">
+			<name lang="und">Select the planets from the list below.</name>
+			<description lang="und">Select the planets from the list below.</description>
+			<interactionType>choice</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_5hmqro1qC5O</correctResponsePattern>
+				<correctResponsePattern>choice_6biJYtcdOoK</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_5hmqro1qC5O</id>
+					<description lang="und">Mars</description>
+				</component>
+				<component>
+					<id>choice_6biJYtcdOoK</id>
+					<description lang="und">Earth</description>
+				</component>
+				<component>
+					<id>choice_6dt2QgKPjtn</id>
+					<description lang="und">Sun</description>
+				</component>
+				<component>
+					<id>choice_61GvRlVaXIj</id>
+					<description lang="und">Moon</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="6cRKIhEssyA" type="module">
+			<name lang="und">What is the name of the planet that we live on?</name>
+			<description lang="und">What is the name of the planet that we live on?</description>
+		</activity>
+		<activity id="6cRKIhEssyA.d7911223-2749-424f-bee8-e241f458bff3" type="cmi.interaction">
+			<name lang="und">What is the name of the planet that we live on?</name>
+			<description lang="und">What is the name of the planet that we live on?</description>
+			<interactionType>fill-in</interactionType>
+		</activity>
+		<activity id="5cgcNZPuHSe" type="module">
+			<name lang="und">Match the planets to their descriptions.</name>
+			<description lang="und">Match the planets to their descriptions.</description>
+		</activity>
+		<activity id="5cgcNZPuHSe.a7450fa0-c56b-4bbf-8716-30e987a55d4d" type="cmi.interaction">
+			<name lang="und">Match the planets to their descriptions.</name>
+			<description lang="und">Match the planets to their descriptions.</description>
+			<interactionType>matching</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>statement_6MoQIzOkywp[.]choice_6dxw50J12qb</correctResponsePattern>
+				<correctResponsePattern>statement_6X5pMavJIqb[.]choice_5bjMcpSQbu1</correctResponsePattern>
+				<correctResponsePattern>statement_5rBWGPPX93B[.]choice_6JkGvbQYq5y</correctResponsePattern>
+			</correctResponsePatterns>
+			<source>
+				<component>
+					<id>statement_6MoQIzOkywp</id>
+					<description lang="und">The planet we live on</description>
+				</component>
+				<component>
+					<id>statement_6X5pMavJIqb</id>
+					<description lang="und">The closest planet to Earth</description>
+				</component>
+				<component>
+					<id>statement_5rBWGPPX93B</id>
+					<description lang="und">The closest planet to the Sun</description>
+				</component>
+			</source>
+			<target>
+				<component>
+					<id>choice_6dxw50J12qb</id>
+					<description lang="und">Earth</description>
+				</component>
+				<component>
+					<id>choice_5bjMcpSQbu1</id>
+					<description lang="und">Mars</description>
+				</component>
+				<component>
+					<id>choice_6JkGvbQYq5y</id>
+					<description lang="und">Mercury</description>
+				</component>
+			</target>
+		</activity>
+		<activity id="6hoSx7vtpP4" type="module">
+			<name lang="und">Place the planets in order based on their average distance from the Sun.</name>
+			<description lang="und">Place the planets in order based on their average distance from the Sun.</description>
+		</activity>
+		<activity id="6hoSx7vtpP4.6b284974-20f5-4f92-bf8b-12634c643277" type="cmi.interaction">
+			<name lang="und">Place the planets in order based on their average distance from the Sun.</name>
+			<description lang="und">Place the planets in order based on their average distance from the Sun.</description>
+			<interactionType>sequencing</interactionType>
+			<correctResponsePatterns>
+				<correctResponsePattern>choice_6P5Ewtr0AV5</correctResponsePattern>
+				<correctResponsePattern>choice_5dmhLA2lvHz</correctResponsePattern>
+				<correctResponsePattern>choice_61dfQpOlbpv</correctResponsePattern>
+				<correctResponsePattern>choice_64Or8QRyNqJ</correctResponsePattern>
+				<correctResponsePattern>choice_5rvv1NAWm35</correctResponsePattern>
+				<correctResponsePattern>choice_5ah0Ia79vPz</correctResponsePattern>
+				<correctResponsePattern>choice_5l5S2DnWezC</correctResponsePattern>
+				<correctResponsePattern>choice_6ahaFxsHDaf</correctResponsePattern>
+			</correctResponsePatterns>
+			<choices>
+				<component>
+					<id>choice_6P5Ewtr0AV5</id>
+					<description lang="und">Mercury</description>
+				</component>
+				<component>
+					<id>choice_5dmhLA2lvHz</id>
+					<description lang="und">Venus</description>
+				</component>
+				<component>
+					<id>choice_61dfQpOlbpv</id>
+					<description lang="und">Earth</description>
+				</component>
+				<component>
+					<id>choice_64Or8QRyNqJ</id>
+					<description lang="und">Mars</description>
+				</component>
+				<component>
+					<id>choice_5rvv1NAWm35</id>
+					<description lang="und">Jupiter</description>
+				</component>
+				<component>
+					<id>choice_5ah0Ia79vPz</id>
+					<description lang="und">Saturn</description>
+				</component>
+				<component>
+					<id>choice_5l5S2DnWezC</id>
+					<description lang="und">Uranus</description>
+				</component>
+				<component>
+					<id>choice_6ahaFxsHDaf</id>
+					<description lang="und">Neptune</description>
+				</component>
+			</choices>
+		</activity>
+		<activity id="5wgwpXGIaWk" type="module">
+			<name lang="und">How many planets are in our solar system? (Not including Pluto)</name>
+			<description lang="und">How many planets are in our solar system? (Not including Pluto)</description>
+		</activity>
+		<activity id="5wgwpXGIaWk.8fbebd0a-0127-4a10-809e-6e3b40fd91e7" type="cmi.interaction">
+			<name lang="und">How many planets are in our solar system? (Not including Pluto)</name>
+			<description lang="und">How many planets are in our solar system? (Not including Pluto)</description>
+			<interactionType>numeric</interactionType>
+		</activity>
+		<activity id="5mAuWE6HMJX" type="module">
+			<name lang="und">Rate the statements below based on your experience.</name>
+			<description lang="und">Rate the statements below based on your experience.</description>
+		</activity>
+		<activity id="5mAuWE6HMJX.86ebc142-18dd-4d75-af5f-269f604cfbd2.Statement_5xDTWOL4BBj" type="cmi.interaction">
+			<name lang="und">I wish Pluto was considered still a planet.</name>
+			<description lang="und">I wish Pluto was considered still a planet.</description>
+			<interactionType>likert</interactionType>
+			<scale>
+				<component>
+					<id>6A0s985rUF4</id>
+					<description lang="und">Strongly Disagree</description>
+				</component>
+				<component>
+					<id>6msxh59uUS7</id>
+					<description lang="und">Disagree</description>
+				</component>
+				<component>
+					<id>5dEzjq4qsKb</id>
+					<description lang="und">Neutral</description>
+				</component>
+				<component>
+					<id>6HssioR0LFv</id>
+					<description lang="und">Agree</description>
+				</component>
+				<component>
+					<id>5xzbluTE5WB</id>
+					<description lang="und">Strongly Agree</description>
+				</component>
+			</scale>
+		</activity>
+		<activity id="5mAuWE6HMJX.86ebc142-18dd-4d75-af5f-269f604cfbd2.Statement_65NfCGfB1gG" type="cmi.interaction">
+			<name lang="und">The Moon is really far away.</name>
+			<description lang="und">The Moon is really far away.</description>
+			<interactionType>likert</interactionType>
+			<scale>
+				<component>
+					<id>6A0s985rUF4</id>
+					<description lang="und">Strongly Disagree</description>
+				</component>
+				<component>
+					<id>6msxh59uUS7</id>
+					<description lang="und">Disagree</description>
+				</component>
+				<component>
+					<id>5dEzjq4qsKb</id>
+					<description lang="und">Neutral</description>
+				</component>
+				<component>
+					<id>6HssioR0LFv</id>
+					<description lang="und">Agree</description>
+				</component>
+				<component>
+					<id>5xzbluTE5WB</id>
+					<description lang="und">Strongly Agree</description>
+				</component>
+			</scale>
+		</activity>
+		<activity id="5mAuWE6HMJX.86ebc142-18dd-4d75-af5f-269f604cfbd2.Statement_66NyJzbxzL5" type="cmi.interaction">
+			<name lang="und">Planets are cool but I prefer stars.</name>
+			<description lang="und">Planets are cool but I prefer stars.</description>
+			<interactionType>likert</interactionType>
+			<scale>
+				<component>
+					<id>6A0s985rUF4</id>
+					<description lang="und">Strongly Disagree</description>
+				</component>
+				<component>
+					<id>6msxh59uUS7</id>
+					<description lang="und">Disagree</description>
+				</component>
+				<component>
+					<id>5dEzjq4qsKb</id>
+					<description lang="und">Neutral</description>
+				</component>
+				<component>
+					<id>6HssioR0LFv</id>
+					<description lang="und">Agree</description>
+				</component>
+				<component>
+					<id>5xzbluTE5WB</id>
+					<description lang="und">Strongly Agree</description>
+				</component>
+			</scale>
+		</activity>
+		<activity id="6dVvRwG8ieB" type="module">
+			<name lang="und">Results Slide</name>
+			<description lang="und">Results Slide</description>
+		</activity>
+	</activities>
+</tincan>
