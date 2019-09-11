@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ContentItems xmlns:csmd="http://www.imsglobal.org/profile/cc/ccv1p2/ccv1p2_imscsmd_v1p0.xsd" xmlns:dc="http://dublincore.org/documents/dces/">
+    <ContentItem>
+        <dc:title><![CDATA[Quadratics]]></dc:title>
+        <dc:description/>
+        <dc:creator/>
+        <dc:contributor>None</dc:contributor>
+        <dc:source>None</dc:source>
+        <dc:relation>None</dc:relation>
+        <dc:rights>yes</dc:rights>
+        <dc:coverage/>
+        <dc:subject>All</dc:subject>
+        <keyword>Quadratic Equations</keyword>
+        <keyword>The Discriminant</keyword>
+        <keyword>Discriminant Examples</keyword>
+        <keyword>Quadratics</keyword>
+        <keyword>Quadratics</keyword>
+        <keyword>Quadratics</keyword>
+        <keyword>Quadratics</keyword>
+        <keyword>Quadratics</keyword>
+        <keyword>Quadratics</keyword>
+        <keyword>Quadratics</keyword>
+        <dc:format>HTML / XHTML</dc:format>
+        <dc:type>Tutorial</dc:type>
+        <dc:audience>Unspecified</dc:audience>
+        <dc:license>Attribution Non-commercial</dc:license>
+        <dc:publisher>SoftChalk LessonBuilder</dc:publisher>
+        <version>1.0</version>
+        <Cost Currency="USD">None</Cost>
+        <SubTitle><![CDATA[A Discriminating Example]]></SubTitle>
+        <SingleTry>false</SingleTry>
+        <TotalPoints>10</TotalPoints>
+        <SchoolName/>
+        <Language>English</Language>
+        <NumberOfPages>5</NumberOfPages>
+        <MainFileName>Quadratic</MainFileName>
+        <CreatorFirstName/>
+        <CreatorLastName/>
+        <Subjects>
+            <Subject>All</Subject>
+        </Subjects>
+        <Levels>
+            <Level>All</Level>
+        </Levels>
+        <ImagesPresent>false</ImagesPresent>
+        <ImageEquivalents>false</ImageEquivalents>
+        <ImageEquivalentsPresentation>Unspecified</ImageEquivalentsPresentation>
+        <StructuralElements/>
+        <FlashingPresent>false</FlashingPresent>
+        <FlashingSlow>false</FlashingSlow>
+        <FlashingDisablable>false</FlashingDisablable>
+        <MultimediaPresent>false</MultimediaPresent>
+        <MultimediaFormats/>
+        <MultimediaAlternatives/>
+        <MultimediaComment/>
+        <TablesPresent>false</TablesPresent>
+        <TablesPresentation>Unspecified</TablesPresentation>
+        <TableRowsColumnsIdentified>false</TableRowsColumnsIdentified>
+        <ColorUsedForInformation>false</ColorUsedForInformation>
+        <ColorAlternativesPresent>false</ColorAlternativesPresent>
+        <TextContrast>Unknown</TextContrast>
+        <TextModifiables/>
+        <CommericalAlternative>false</CommericalAlternative>
+        <CommericalAlternativeObjects>false</CommericalAlternativeObjects>
+        <CommericalAlternativeReadingOrder>false</CommericalAlternativeReadingOrder>
+        <FramesPresent>true</FramesPresent>
+        <FormsPresent>false</FormsPresent>
+        <ImageMapsPresent>false</ImageMapsPresent>
+        <TimedResponseUsed>false</TimedResponseUsed>
+        <Hazards/>
+        <SupportTools/>
+        <StandardsSupport>
+            <WCAGLevel>WCAG1A</WCAGLevel>
+            <LegislationSupport>
+                <Legislation>US (Section 508)</Legislation>
+            </LegislationSupport>
+            <StandardsComment/>
+        </StandardsSupport>
+    </ContentItem>
+</ContentItems>

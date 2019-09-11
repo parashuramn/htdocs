@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ContentItems xmlns:csmd="http://www.imsglobal.org/profile/cc/ccv1p2/ccv1p2_imscsmd_v1p0.xsd" xmlns:dc="http://dublincore.org/documents/dces/">
+    <ContentItem>
+        <dc:title><![CDATA[WWII]]></dc:title>
+        <dc:description/>
+        <dc:creator/>
+        <dc:contributor>None</dc:contributor>
+        <dc:source>None</dc:source>
+        <dc:relation>None</dc:relation>
+        <dc:rights>yes</dc:rights>
+        <dc:coverage/>
+        <dc:subject>History</dc:subject>
+        <keyword>Ronald Spector Eagle Against the Sun The American War With Japan New York Vintage</keyword>
+        <keyword>1985</keyword>
+        <keyword>Sir Martin Gilbert The Second World War A Complete History Rev ed</keyword>
+        <keyword>New York Holt</keyword>
+        <keyword>2004</keyword>
+        <keyword>William Manchester American Caesar Douglas MacArthur 18801964 New York Dell</keyword>
+        <keyword>1983</keyword>
+        <keyword>Video</keyword>
+        <keyword>The United States in World War II</keyword>
+        <keyword>The Rise of Nazi Germany The SSState</keyword>
+        <dc:format>HTML / XHTML</dc:format>
+        <dc:type>Tutorial</dc:type>
+        <dc:audience>Unspecified</dc:audience>
+        <dc:license>Unspecified</dc:license>
+        <dc:publisher>SoftChalk LessonBuilder</dc:publisher>
+        <version>1.0</version>
+        <Cost Currency="USD">None</Cost>
+        <SubTitle><![CDATA[US History]]></SubTitle>
+        <SingleTry>true</SingleTry>
+        <TotalPoints>5</TotalPoints>
+        <SchoolName/>
+        <Language>English</Language>
+        <NumberOfPages>13</NumberOfPages>
+        <MainFileName>WWII_Sample</MainFileName>
+        <CreatorFirstName/>
+        <CreatorLastName/>
+        <Subjects>
+            <Subject>History</Subject>
+        </Subjects>
+        <Levels>
+            <Level>Undergraduate</Level>
+        </Levels>
+        <ImagesPresent>false</ImagesPresent>
+        <ImageEquivalents>false</ImageEquivalents>
+        <ImageEquivalentsPresentation>Unspecified</ImageEquivalentsPresentation>
+        <StructuralElements/>
+        <FlashingPresent>false</FlashingPresent>
+        <FlashingSlow>false</FlashingSlow>
+        <FlashingDisablable>false</FlashingDisablable>
+        <MultimediaPresent>false</MultimediaPresent>
+        <MultimediaFormats/>
+        <MultimediaAlternatives/>
+        <MultimediaComment/>
+        <TablesPresent>false</TablesPresent>
+        <TablesPresentation>Unspecified</TablesPresentation>
+        <TableRowsColumnsIdentified>false</TableRowsColumnsIdentified>
+        <ColorUsedForInformation>false</ColorUsedForInformation>
+        <ColorAlternativesPresent>false</ColorAlternativesPresent>
+        <TextContrast>Good</TextContrast>
+        <TextModifiables/>
+        <CommericalAlternative>false</CommericalAlternative>
+        <CommericalAlternativeObjects>false</CommericalAlternativeObjects>
+        <CommericalAlternativeReadingOrder>false</CommericalAlternativeReadingOrder>
+        <FramesPresent>true</FramesPresent>
+        <FormsPresent>false</FormsPresent>
+        <ImageMapsPresent>false</ImageMapsPresent>
+        <TimedResponseUsed>false</TimedResponseUsed>
+        <Hazards>
+            <Hazard>None</Hazard>
+        </Hazards>
+        <SupportTools>
+            <SupportTool>None</SupportTool>
+        </SupportTools>
+        <StandardsSupport>
+            <WCAGLevel>WCAG1A</WCAGLevel>
+            <LegislationSupport>
+                <Legislation>US (Section 508)</Legislation>
+            </LegislationSupport>
+            <StandardsComment/>
+        </StandardsSupport>
+    </ContentItem>
+</ContentItems>

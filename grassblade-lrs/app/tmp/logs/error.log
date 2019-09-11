@@ -1,0 +1,349 @@
+2019-07-23 00:00:17 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'root\'@\'localhost\' (using password: NO)',
+  'enabled' => true,
+)
+Request URL: /grassblade-lrs/users/login
+Stack Trace:
+#0 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Datasource\DboSource.php(278): Mysql->connect()
+#1 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(3646): ConnectionManager::getDataSource('default')
+#3 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(1162): Model->setDataSource('default')
+#4 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(3673): Model->setSource('gb_users')
+#5 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(1394): Model->getDataSource()
+#6 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\View\Helper\FormHelper.php(480): FormHelper->_introspectModel('User', 'fields')
+#8 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\View\Users\login.ctp(2): FormHelper->create('User', Array)
+#9 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\View\View.php(971): include('D:\\wampstack-7....')
+#10 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\View\View.php(933): View->_evaluate('D:\\wampstack-7....', Array)
+#11 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\View\View.php(473): View->_render('D:\\wampstack-7....')
+#12 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#13 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#14 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\webroot\index.php(139): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2019-07-23 02:44:00 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'grassblade.Statement.agent_mbox' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+Request URL: /grassblade-lrs/Reports/agents/sort:no_of_statements/direction:desc
+Stack Trace:
+#0 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Datasource\DboSource.php(489): PDOStatement->execute(Array)
+#1 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Datasource\DboSource.php(455): DboSource->_execute('SELECT `Stateme...', Array)
+#2 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Datasource\DboSource.php(702): DboSource->execute('SELECT `Stateme...', Array, Array)
+#3 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Datasource\DboSource.php(1213): DboSource->fetchAll('SELECT `Stateme...', Array)
+#4 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Statement), Array)
+#5 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(3012): Model->_readDataSource('all', Array)
+#6 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Model\AppModel.php(87): Model->find('all', Array, NULL, NULL)
+#7 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Controller\Component\PaginatorComponent.php(212): AppModel->find('all', Array)
+#8 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Controller\AppController.php(263): PaginatorComponent->paginate(Object(Statement), Array, Array)
+#9 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Controller\ReportsController.php(733): AppController->paginate()
+#10 [internal function]: ReportsController->agents()
+#11 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(ReportsController), Array)
+#12 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ReportsController), Object(CakeRequest))
+#14 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\webroot\index.php(139): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2019-07-23 02:46:46 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'grassblade.Statement.verb' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+Request URL: /grassblade-lrs/Reports/verbs/sort:no_of_statements/direction:desc
+Stack Trace:
+#0 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Datasource\DboSource.php(489): PDOStatement->execute(Array)
+#1 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Datasource\DboSource.php(455): DboSource->_execute('SELECT `Stateme...', Array)
+#2 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Datasource\DboSource.php(702): DboSource->execute('SELECT `Stateme...', Array, Array)
+#3 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Datasource\DboSource.php(1213): DboSource->fetchAll('SELECT `Stateme...', Array)
+#4 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Statement), Array)
+#5 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(3012): Model->_readDataSource('all', Array)
+#6 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Model\AppModel.php(87): Model->find('all', Array, NULL, NULL)
+#7 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Controller\Component\PaginatorComponent.php(212): AppModel->find('all', Array)
+#8 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Controller\AppController.php(263): PaginatorComponent->paginate(Object(Statement), Array, Array)
+#9 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Controller\ReportsController.php(610): AppController->paginate()
+#10 [internal function]: ReportsController->verbs()
+#11 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(ReportsController), Array)
+#12 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ReportsController), Object(CakeRequest))
+#14 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\webroot\index.php(139): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2019-07-23 02:47:52 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'grassblade.Statement.agent_mbox' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+Request URL: /grassblade-lrs/Reports/agents/sort:no_of_statements/direction:desc
+Stack Trace:
+#0 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Datasource\DboSource.php(489): PDOStatement->execute(Array)
+#1 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Datasource\DboSource.php(455): DboSource->_execute('SELECT `Stateme...', Array)
+#2 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Datasource\DboSource.php(702): DboSource->execute('SELECT `Stateme...', Array, Array)
+#3 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Datasource\DboSource.php(1213): DboSource->fetchAll('SELECT `Stateme...', Array)
+#4 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Statement), Array)
+#5 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(3012): Model->_readDataSource('all', Array)
+#6 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Model\AppModel.php(87): Model->find('all', Array, NULL, NULL)
+#7 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Controller\Component\PaginatorComponent.php(212): AppModel->find('all', Array)
+#8 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Controller\AppController.php(263): PaginatorComponent->paginate(Object(Statement), Array, Array)
+#9 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Controller\ReportsController.php(733): AppController->paginate()
+#10 [internal function]: ReportsController->agents()
+#11 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(ReportsController), Array)
+#12 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ReportsController), Object(CakeRequest))
+#14 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\webroot\index.php(139): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2019-07-23 21:49:41 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+',
+  'enabled' => true,
+)
+Request URL: /grassblade-lrs/users/login
+Stack Trace:
+#0 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Datasource\DboSource.php(278): Mysql->connect()
+#1 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(3646): ConnectionManager::getDataSource('default')
+#3 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(1162): Model->setDataSource('default')
+#4 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(3673): Model->setSource('gb_users')
+#5 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(1394): Model->getDataSource()
+#6 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\View\Helper\FormHelper.php(480): FormHelper->_introspectModel('User', 'fields')
+#8 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\View\Users\login.ctp(2): FormHelper->create('User', Array)
+#9 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\View\View.php(971): include('D:\\wampstack-7....')
+#10 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\View\View.php(933): View->_evaluate('D:\\wampstack-7....', Array)
+#11 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\View\View.php(473): View->_render('D:\\wampstack-7....')
+#12 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#13 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#14 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\webroot\index.php(139): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2019-07-24 23:17:28 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+',
+  'enabled' => true,
+)
+Request URL: /grassblade-lrs/users/login
+Stack Trace:
+#0 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Datasource\DboSource.php(278): Mysql->connect()
+#1 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(3646): ConnectionManager::getDataSource('default')
+#3 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(1162): Model->setDataSource('default')
+#4 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(3673): Model->setSource('gb_users')
+#5 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(1394): Model->getDataSource()
+#6 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\View\Helper\FormHelper.php(480): FormHelper->_introspectModel('User', 'fields')
+#8 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\View\Users\login.ctp(2): FormHelper->create('User', Array)
+#9 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\View\View.php(971): include('D:\\wampstack-7....')
+#10 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\View\View.php(933): View->_evaluate('D:\\wampstack-7....', Array)
+#11 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\View\View.php(473): View->_render('D:\\wampstack-7....')
+#12 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#13 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#14 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\webroot\index.php(139): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2019-07-24 23:19:28 Error: [Requests_Exception] cURL error 28: Operation timed out after 10000 milliseconds with 0 bytes received
+Request URL: /grassblade-lrs/Reports
+Stack Trace:
+#0 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\wordpress-rest-api\library\Requests\library\Requests\Transport\cURL.php(177): Requests_Transport_cURL->process_response('', Array)
+#1 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\wordpress-rest-api\library\Requests\library\Requests.php(379): Requests_Transport_cURL->request('http://nss-gras...', Array, Array, Array)
+#2 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\wordpress-rest-api\library\WPAPI.php(177): Requests::request('http://nss-gras...', Array, Array, 'GET', Array)
+#3 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\wordpress-rest-api\library\WPAPI.php(137): WPAPI->request('/grassblade/v1/...', Array, Array, 'GET', Array)
+#4 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\functions.php(995): WPAPI->get('/grassblade/v1/...')
+#5 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\functions.php(2171): get_wordpress_client()
+#6 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\hooks.php(40): {closure}('', Object(ReportsController))
+#7 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Controller\ReportsController.php(54): modified('fetch_contents_...', '', Object(ReportsController))
+#8 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Event\CakeEventManager.php(243): ReportsController->beforeFilter(Object(CakeEvent))
+#9 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Controller\Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#10 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(189): Controller->startupProcess()
+#11 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ReportsController), Object(CakeRequest))
+#12 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\webroot\index.php(139): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2019-07-24 23:19:40 Error: [Requests_Exception] cURL error 28: Operation timed out after 10000 milliseconds with 0 bytes received
+Request URL: /grassblade-lrs/Reports
+Stack Trace:
+#0 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\wordpress-rest-api\library\Requests\library\Requests\Transport\cURL.php(177): Requests_Transport_cURL->process_response('', Array)
+#1 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\wordpress-rest-api\library\Requests\library\Requests.php(379): Requests_Transport_cURL->request('http://nss-gras...', Array, Array, Array)
+#2 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\wordpress-rest-api\library\WPAPI.php(177): Requests::request('http://nss-gras...', Array, Array, 'GET', Array)
+#3 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\wordpress-rest-api\library\WPAPI.php(137): WPAPI->request('/grassblade/v1/...', Array, Array, 'GET', Array)
+#4 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\functions.php(995): WPAPI->get('/grassblade/v1/...')
+#5 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\functions.php(2171): get_wordpress_client()
+#6 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\hooks.php(40): {closure}('', Object(ReportsController))
+#7 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Controller\ReportsController.php(54): modified('fetch_contents_...', '', Object(ReportsController))
+#8 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Event\CakeEventManager.php(243): ReportsController->beforeFilter(Object(CakeEvent))
+#9 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Controller\Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#10 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(189): Controller->startupProcess()
+#11 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ReportsController), Object(CakeRequest))
+#12 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\webroot\index.php(139): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2019-07-25 01:02:59 Error: [Requests_Exception] cURL error 28: Operation timed out after 10000 milliseconds with 0 bytes received
+Request URL: /grassblade-lrs/Reports
+Stack Trace:
+#0 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\wordpress-rest-api\library\Requests\library\Requests\Transport\cURL.php(177): Requests_Transport_cURL->process_response('', Array)
+#1 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\wordpress-rest-api\library\Requests\library\Requests.php(379): Requests_Transport_cURL->request('http://nss-gras...', Array, Array, Array)
+#2 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\wordpress-rest-api\library\WPAPI.php(177): Requests::request('http://nss-gras...', Array, Array, 'GET', Array)
+#3 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\wordpress-rest-api\library\WPAPI.php(137): WPAPI->request('/grassblade/v1/...', Array, Array, 'GET', Array)
+#4 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\functions.php(995): WPAPI->get('/grassblade/v1/...')
+#5 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\functions.php(2171): get_wordpress_client()
+#6 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\hooks.php(40): {closure}('', Object(ReportsController))
+#7 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Controller\ReportsController.php(54): modified('fetch_contents_...', '', Object(ReportsController))
+#8 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Event\CakeEventManager.php(243): ReportsController->beforeFilter(Object(CakeEvent))
+#9 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Controller\Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#10 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(189): Controller->startupProcess()
+#11 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ReportsController), Object(CakeRequest))
+#12 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\webroot\index.php(139): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2019-07-25 21:59:21 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+',
+  'enabled' => true,
+)
+Request URL: /grassblade-lrs/users/login
+Stack Trace:
+#0 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Datasource\DboSource.php(278): Mysql->connect()
+#1 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(3646): ConnectionManager::getDataSource('default')
+#3 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(1162): Model->setDataSource('default')
+#4 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(3673): Model->setSource('gb_users')
+#5 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(1394): Model->getDataSource()
+#6 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\View\Helper\FormHelper.php(480): FormHelper->_introspectModel('User', 'fields')
+#8 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\View\Users\login.ctp(2): FormHelper->create('User', Array)
+#9 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\View\View.php(971): include('D:\\wampstack-7....')
+#10 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\View\View.php(933): View->_evaluate('D:\\wampstack-7....', Array)
+#11 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\View\View.php(473): View->_render('D:\\wampstack-7....')
+#12 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#13 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#14 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\webroot\index.php(139): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2019-07-28 21:08:40 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+',
+  'enabled' => true,
+)
+Request URL: /grassblade-lrs/users/login
+Stack Trace:
+#0 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Datasource\DboSource.php(278): Mysql->connect()
+#1 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(3646): ConnectionManager::getDataSource('default')
+#3 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(1162): Model->setDataSource('default')
+#4 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(3673): Model->setSource('gb_users')
+#5 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(1394): Model->getDataSource()
+#6 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\View\Helper\FormHelper.php(480): FormHelper->_introspectModel('User', 'fields')
+#8 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\View\Users\login.ctp(2): FormHelper->create('User', Array)
+#9 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\View\View.php(971): include('D:\\wampstack-7....')
+#10 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\View\View.php(933): View->_evaluate('D:\\wampstack-7....', Array)
+#11 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\View\View.php(473): View->_render('D:\\wampstack-7....')
+#12 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#13 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#14 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\webroot\index.php(139): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2019-07-29 20:57:02 Error: [Requests_Exception] cURL error 28: Operation timed out after 10000 milliseconds with 0 bytes received
+Request URL: /grassblade-lrs/Reports
+Stack Trace:
+#0 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\wordpress-rest-api\library\Requests\library\Requests\Transport\cURL.php(177): Requests_Transport_cURL->process_response('', Array)
+#1 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\wordpress-rest-api\library\Requests\library\Requests.php(379): Requests_Transport_cURL->request('http://nss-gras...', Array, Array, Array)
+#2 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\wordpress-rest-api\library\WPAPI.php(177): Requests::request('http://nss-gras...', Array, Array, 'GET', Array)
+#3 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\wordpress-rest-api\library\WPAPI.php(137): WPAPI->request('/grassblade/v1/...', Array, Array, 'GET', Array)
+#4 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\functions.php(995): WPAPI->get('/grassblade/v1/...')
+#5 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\functions.php(2171): get_wordpress_client()
+#6 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\hooks.php(40): {closure}('', Object(ReportsController))
+#7 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Controller\ReportsController.php(54): modified('fetch_contents_...', '', Object(ReportsController))
+#8 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Event\CakeEventManager.php(243): ReportsController->beforeFilter(Object(CakeEvent))
+#9 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Controller\Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#10 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(189): Controller->startupProcess()
+#11 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ReportsController), Object(CakeRequest))
+#12 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\webroot\index.php(139): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2019-07-29 20:58:46 Error: [Requests_Exception] cURL error 28: Operation timed out after 10000 milliseconds with 0 bytes received
+Request URL: /grassblade-lrs/Reports
+Stack Trace:
+#0 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\wordpress-rest-api\library\Requests\library\Requests\Transport\cURL.php(177): Requests_Transport_cURL->process_response('', Array)
+#1 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\wordpress-rest-api\library\Requests\library\Requests.php(379): Requests_Transport_cURL->request('http://nss-gras...', Array, Array, Array)
+#2 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\wordpress-rest-api\library\WPAPI.php(177): Requests::request('http://nss-gras...', Array, Array, 'GET', Array)
+#3 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\wordpress-rest-api\library\WPAPI.php(137): WPAPI->request('/grassblade/v1/...', Array, Array, 'GET', Array)
+#4 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\functions.php(995): WPAPI->get('/grassblade/v1/...')
+#5 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\functions.php(2171): get_wordpress_client()
+#6 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\hooks.php(40): {closure}('', Object(ReportsController))
+#7 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Controller\ReportsController.php(54): modified('fetch_contents_...', '', Object(ReportsController))
+#8 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Event\CakeEventManager.php(243): ReportsController->beforeFilter(Object(CakeEvent))
+#9 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Controller\Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#10 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(189): Controller->startupProcess()
+#11 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ReportsController), Object(CakeRequest))
+#12 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\webroot\index.php(139): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2019-08-04 21:14:40 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+',
+  'enabled' => true,
+)
+Request URL: /grassblade-lrs/users/login
+Stack Trace:
+#0 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Datasource\DboSource.php(278): Mysql->connect()
+#1 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(3646): ConnectionManager::getDataSource('default')
+#3 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(1162): Model->setDataSource('default')
+#4 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(3673): Model->setSource('gb_users')
+#5 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(1394): Model->getDataSource()
+#6 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\View\Helper\FormHelper.php(480): FormHelper->_introspectModel('User', 'fields')
+#8 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\View\Users\login.ctp(2): FormHelper->create('User', Array)
+#9 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\View\View.php(971): include('D:\\wampstack-7....')
+#10 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\View\View.php(933): View->_evaluate('D:\\wampstack-7....', Array)
+#11 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\View\View.php(473): View->_render('D:\\wampstack-7....')
+#12 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#13 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#14 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\webroot\index.php(139): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2019-08-07 20:44:54 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+',
+  'enabled' => true,
+)
+Request URL: /grassblade-lrs/Reports
+Stack Trace:
+#0 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Datasource\DboSource.php(278): Mysql->connect()
+#1 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(3646): ConnectionManager::getDataSource('default')
+#3 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(1162): Model->setDataSource('default')
+#4 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(3673): Model->setSource('gb_content_type...')
+#5 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(3040): Model->getDataSource()
+#6 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(3012): Model->_readDataSource('all', Array)
+#7 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Model\AppModel.php(87): Model->find('all', Array, NULL, NULL)
+#8 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\functions.php(2112): AppModel->find('all')
+#9 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\functions.php(2164): load_contents_data()
+#10 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Vendor\hooks.php(40): {closure}('', Object(ReportsController))
+#11 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\Controller\ReportsController.php(54): modified('fetch_contents_...', '', Object(ReportsController))
+#12 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Event\CakeEventManager.php(243): ReportsController->beforeFilter(Object(CakeEvent))
+#13 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Controller\Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#14 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(189): Controller->startupProcess()
+#15 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ReportsController), Object(CakeRequest))
+#16 D:\wampstack-7.3.7-1\apache2\htdocs\grassblade-lrs\app\webroot\index.php(139): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2019-08-20 23:30:05 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /grassblade-lrs/users/login
+Stack Trace:
+#0 C:\Bitnami\wampstack-7.1.31-0\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Datasource\DboSource.php(278): Mysql->connect()
+#1 C:\Bitnami\wampstack-7.1.31-0\apache2\htdocs\grassblade-lrs\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\Bitnami\wampstack-7.1.31-0\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(3646): ConnectionManager::getDataSource('default')
+#3 C:\Bitnami\wampstack-7.1.31-0\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(1162): Model->setDataSource('default')
+#4 C:\Bitnami\wampstack-7.1.31-0\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(3673): Model->setSource('gb_users')
+#5 C:\Bitnami\wampstack-7.1.31-0\apache2\htdocs\grassblade-lrs\lib\Cake\Model\Model.php(1394): Model->getDataSource()
+#6 C:\Bitnami\wampstack-7.1.31-0\apache2\htdocs\grassblade-lrs\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 C:\Bitnami\wampstack-7.1.31-0\apache2\htdocs\grassblade-lrs\lib\Cake\View\Helper\FormHelper.php(480): FormHelper->_introspectModel('User', 'fields')
+#8 C:\Bitnami\wampstack-7.1.31-0\apache2\htdocs\grassblade-lrs\app\View\Users\login.ctp(2): FormHelper->create('User', Array)
+#9 C:\Bitnami\wampstack-7.1.31-0\apache2\htdocs\grassblade-lrs\lib\Cake\View\View.php(971): include('C:\\Bitnami\\wamp...')
+#10 C:\Bitnami\wampstack-7.1.31-0\apache2\htdocs\grassblade-lrs\lib\Cake\View\View.php(933): View->_evaluate('C:\\Bitnami\\wamp...', Array)
+#11 C:\Bitnami\wampstack-7.1.31-0\apache2\htdocs\grassblade-lrs\lib\Cake\View\View.php(473): View->_render('C:\\Bitnami\\wamp...')
+#12 C:\Bitnami\wampstack-7.1.31-0\apache2\htdocs\grassblade-lrs\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#13 C:\Bitnami\wampstack-7.1.31-0\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#14 C:\Bitnami\wampstack-7.1.31-0\apache2\htdocs\grassblade-lrs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 C:\Bitnami\wampstack-7.1.31-0\apache2\htdocs\grassblade-lrs\app\webroot\index.php(139): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}

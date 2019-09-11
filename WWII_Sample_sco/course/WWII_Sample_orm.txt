@@ -1,0 +1,103 @@
+! SoftChalk LessonBuilder ORM File (C)2004-2010
+! ================ DO NOT EDIT ================
+
+!Mac OS X, 10.6.8
+!Java 1.6.0_29
+
+paste_image51
+type=3 page=1 content=<p><img alt="Outline History" src="outline-history.jpg" border="0" height="157" class="resizable" width="100"></p><p><a target="_blank" href="11_The_New_Deal_and_WWII.pdf">Ch. 11 The New Deal and WWII</a></p><p><a target="_blank" href="http://www.shmoop.com/wwii/">World War II</a></p><p><a target="_blank" href="http://www.shmoop.com/wwii-home-front/">WWII: Home Front</a></p>
+type=3 page=15 content=<p><img alt="Outline History" src="outline-history.jpg" border="0" height="157" class="resizable" width="100"></p><p><a target="_blank" href="11_The_New_Deal_and_WWII.pdf">Ch. 11 The New Deal and WWII</a></p><p><a target="_blank" href="http://www.shmoop.com/wwii/">World War II</a></p><p><a target="_blank" href="http://www.shmoop.com/wwii-home-front/">WWII: Home Front</a></p>
+type=3 page=12 content=<p><img alt="Outline History" src="outline-history.jpg" border="0" height="157" class="resizable" width="100"></p><p><a target="_blank" href="11_The_New_Deal_and_WWII.pdf">Ch. 11 The New Deal and WWII</a></p><p><a target="_blank" href="http://www.shmoop.com/wwii/">World War II</a></p><p><a target="_blank" href="http://www.shmoop.com/wwii-home-front/">WWII: Home Front</a></p>
+type=3 page=8 content=<p><img alt="Outline History" src="outline-history.jpg" border="0" height="157" class="resizable" width="100"></p><p><a target="_blank" href="11_The_New_Deal_and_WWII.pdf">Ch. 11 The New Deal and WWII</a></p><p><a target="_blank" href="http://www.shmoop.com/wwii/">World War II</a></p><p><a target="_blank" href="http://www.shmoop.com/wwii-home-front/">WWII: Home Front</a></p>
+type=3 page=7 content=<p><img alt="Outline History" src="outline-history.jpg" border="0" height="157" class="resizable" width="100"></p><p><a target="_blank" href="11_The_New_Deal_and_WWII.pdf">Ch. 11 The New Deal and WWII</a></p><p><a target="_blank" href="http://www.shmoop.com/wwii/">World War II</a></p><p><a target="_blank" href="http://www.shmoop.com/wwii-home-front/">WWII: Home Front</a></p>
+type=3 page=6 content=<p><img alt="Outline History" src="outline-history.jpg" border="0" height="157" class="resizable" width="100"></p><p><a target="_blank" href="11_The_New_Deal_and_WWII.pdf">Ch. 11 The New Deal and WWII</a></p><p><a target="_blank" href="http://www.shmoop.com/wwii/">World War II</a></p><p><a target="_blank" href="http://www.shmoop.com/wwii-home-front/">WWII: Home Front</a></p>
+type=3 page=5 content=<p><img alt="Outline History" src="outline-history.jpg" border="0" height="157" class="resizable" width="100"></p><p><a target="_blank" href="11_The_New_Deal_and_WWII.pdf">Ch. 11 The New Deal and WWII</a></p><p><a target="_blank" href="http://www.shmoop.com/wwii/">World War II</a></p><p><a target="_blank" href="http://www.shmoop.com/wwii-home-front/">WWII: Home Front</a></p>
+type=3 page=4 content=<p><img alt="Outline History" src="outline-history.jpg" border="0" height="157" class="resizable" width="100"></p><p><a target="_blank" href="11_The_New_Deal_and_WWII.pdf">Ch. 11 The New Deal and WWII</a></p><p><a target="_blank" href="http://www.shmoop.com/wwii/">World War II</a></p><p><a target="_blank" href="http://www.shmoop.com/wwii-home-front/">WWII: Home Front</a></p>
+type=3 page=3 content=<p><img alt="Outline History" src="outline-history.jpg" border="0" height="157" class="resizable" width="100"></p><p><a target="_blank" href="11_The_New_Deal_and_WWII.pdf">Ch. 11 The New Deal and WWII</a></p><p><a target="_blank" href="http://www.shmoop.com/wwii/">World War II</a></p><p><a target="_blank" href="http://www.shmoop.com/wwii-home-front/">WWII: Home Front</a></p>
+
+obj_item=48
+inlinetype=11 objNum=43 src=atlantic-charter.jpg width=200 height=150 desc="No discription" mathML=
+inlinetype=1 objNum=48 src=spe_1941_1209_roosevelt.mp3 width=0 height=0 desc="Audio file." mathML=
+inlinetype=1 objNum=47 src=FDR_pearlharborspeech_64kb.mp3 width=0 height=0 desc="Audio file." mathML=
+inlinetype=1 objNum=46 src=BbcChaimberlainWwii1939.mp3 width=0 height=0 desc="Audio file." mathML=
+inlinetype=7 objNum=6 src= width=0 height=0 desc="Newsreel covering Attack on Pearl Harbor." widget=<embed type="application/x-shockwave-flash" width="640" 	height="504" 	allowfullscreen="true" 	allowscriptaccess="always" 	src="http://www.archive.org/flow/flowplayer.commercial-3.0.5.swf" 	w3c="true" 	flashvars='config={"key":"#$b6eb72a0f2f1e29f3d4","playlist":[{"url":"http://www.archive.org/download/NewsPara1942/format=Thumbnail?.jpg","autoPlay":true,"scaling":"fit"},{"url":"http://www.archive.org/download/NewsPara1942/NewsPara1942_512kb.mp4","autoPlay":false,"accelerated":true,"scaling":"fit","provider":"h264streaming"}],"clip":{"autoPlay":false,"accelerated":true,"scaling":"fit","provider":"h264streaming"},"canvas":{"backgroundColor":"0x000000","backgroundGradient":"none"},"plugins":{"audio":{"url":"http://www.archive.org/flow/flowplayer.audio-3.0.3-dev.swf"},"controls":{"playlist":false,"fullscreen":true,"gloss":"high","backgroundColor":"0x000000","backgroundGradient":"medium","sliderColor":"0x777777","progressColor":"0x777777","timeColor":"0xeeeeee","durationColor":"0x01DAFF","buttonColor":"0x333333","buttonOverColor":"0x505050"},"h264streaming":{"url":"http://www.archive.org/flow/flowplayer.h264streaming-3.0.5.swf"}},"contextMenu":[{"View+NewsPara1942+at+archive.org":"function()"},"-","Flowplayer 3.0.5"]}'> </embed>^endWidget widgetName=News Parade: Bombing of Pearl Harbor (1942);
+inlinetype=11 objNum=44 src=paste_image50.jpg width=200 height=150 desc="No discription" mathML=
+inlinetype=11 objNum=42 src=atlantic-charter.jpg width=200 height=150 desc="No discription" mathML=
+
+#MainFileName      := [WWII_Sample]
+#LessonTitle       := [WWII]
+#LessonDescription := []
+#LessonKeywords    := [Ronald Spector Eagle Against the Sun The American War With Japan New York Vintage,1985,Sir Martin Gilbert The Second World War A Complete History Rev ed,New York Holt,2004,William Manchester American Caesar Douglas MacArthur 18801964 New York Dell,1983,Video,The United States in World War II,The Rise of Nazi Germany The SSState]
+#FootThree         := [Text by <a href="http://www.academicamerican.com/index.html" target="_blank">Henry J. Sage</a></p><p>Designed by <a href="mailto:malissa.attebery@gmail.com" target="_blank">Malissa Attebery</a>]
+#SchoolName        := []
+#EmailAddress      := []
+#CEUs              := []
+#PrintCert         := [false]
+#PrintSummary      := [false]
+#EmailResults      := [false]
+#PassPercent       := [70]
+#CustomStyleName   := [Veins Banner]
+#CSSJustification  := [0]
+#OnThisPage        := [false]
+#PageNav           := [true]
+#FootCopyright     := [true]
+#FootDate          := [false]
+#LessonTitle2      := [US History]
+#TOCSidebar        := [false]
+#TOCNavbar         := [false]
+#TOCEntry          := [false]
+#LessonVersion     := [7.01.05]
+#PrevNextArrows    := [true]
+#VersionExtension  := []
+#FileOpenerType    := [7]
+#LanguageOut       := [English]
+#SubmitToScoreTr   := [false]
+#PrintAll          := [true]
+#TimeStamp         := [1317230129107]
+#SingleTry         := [true]
+#ScormComStatus    := [true]
+#Creator           := []
+#Publisher         := [SoftChalk LessonBuilder]
+#OtherContributor  := [None]
+#Source            := [None]
+#Relation          := [None]
+#Rights            := [yes]
+#Cost              := [None]
+#Coverage          := []
+#Format            := [HTML / XHTML]
+#ResouceType       := [Tutorial]
+#TotalLessonPoints := [5]
+#NumPages          := [13]
+#PlayActFeedback   := [true]
+#QpExtraWide       := [false]
+#UseMasteryScore   := [false]
+#MasteryScoreValue := [0]
+#BBLinkText        := [Click to view]
+#BBItemName        := [WWII]
+#Visible           := [true]
+#TrackNumViews     := [false]
+#NavControlType    := [flow]
+#AddToGradebook    := [true]
+#FirstAttemptOnly  := [true]
+#PointsPossible    := [0]
+#ccForumUsed       := [false]
+#ccForumTitle      := []
+#ccForumTopic      := []
+#LaunchInNewWindow   := [false]
+#CreatorFirstName    := []
+#CreatorLastName     := []
+#CreatorEmail        := []
+#UseObjectMetadata    := [false]
+#LessonRevisionNumber := [39]
+#ConnectAccessType      := [1]
+#ConnectAllowViewing    := [false]
+#ConnectMaxAttempts     := [-1]
+#ConnectScoringOption   := [first]
+#ConnectScoreCenterUser := []
+#SaveAsScoreCenter      := [false]
+#RS_id                  := []
+#RS_jsURL               := []
+#RS_domain              := []
+#RS_useReadSpeaker      := [false]
+#RS_inSidebar           := [true]
+#ScoreCenterHost        := [https://www.softchalkconnect.com]

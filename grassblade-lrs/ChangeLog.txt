@@ -1,0 +1,73 @@
+== 2.2.1 ==
+* Fixed: xAPI GET Statements using agent account instead of mbox.
+* Improve Video played segments heatmap display, and its informatio
+* Other improvements and bug fixes
+
+== 2.2 ==
+* Fixed: SSO handling from Forwarding Proxies like CloudFlare
+* Fixed: Issue with HTTPS via Forwarding Proxies like CloudFlare
+* Upgraded core lib to v2.10.13
+* Moved Filter panel to left over the menus
+* Added Filter close button on top right.
+* Change display name for Users to Managers
+* Other bug fixes
+
+== 2.1.1.8 ==
+* Added ErrorLogs to store logs of errors during xAPI calls, Trigger calls, etc.
+* Added feature to automatically rerun Trigger (on cron run) if the Trigger fails. 
+* Bug fixes
+
+== 2.1.1.7 ==
+* Updated library for PHP 7.2 support 
+* Fixed date filtering when today's statements were not being shown due to timezone  and comparasion issues.
+* Improve performance of verbs list and verb counts by caching the verb list and count.
+* Added LearnDash Content information like Course, Lesson, Topic, xAPI Content in Activity Stream Report and in filtering
+* Added support for WordPress Rest API instead of XML-RPC
+* Remove pagination details for better performance
+* Improve dashboard cart performance by caching statement and verb counts
+* Fixed other minor bugs
+
+== 2.1.1.6 ==
+* Added Played Segments Heatmaps for xAPI Video Profile
+* Added Choices and Correct Response columns
+* Fixed other minor bugs. 
+
+== 2.1.1.5 ==
+* Show error message if XML RPC is not installed
+* Fixed new line and other encoded character causing issue with json decode
+* Added filter statements_query_data to be able to modified Statement queries from AddOns
+* Fixed bug related to filter emails
+* Improve https detection for correct redirects
+* Add xAPI Version v1.0.3 in the supported versions list
+* Upgraded libary to 2.9.7
+* Fixed translation not showing for likert scales
+* Fixed bug filter emails not being saved.
+* Fixed other minor bugs. 
+
+== 2.1.1.4 ==
+* Fixed PHP 7 Installation issue.
+
+== 2.1.1.2 ==
+* Fixed PHP 7 related issues.
+* Fixed exporting statements to WaterShed LRS. 
+* Fixed error when agent_mbox is empty, when agent is not email based.
+* Improved SSO.
+* Fixed disabled triggers getting executed.
+* Fixed email id changing when many statements sent together in the LRS.
+* Improved GET statements performance.
+* Improved Bell Chart Report.
+* Improved filtering.
+* Fixed No of Previous Days not being saved in Filter Emails
+* Fixed Filters and Filter emails not sorting by default
+* Add a button to expand/contract filter panel to full screen.
+* Fixed local groups filtering.
+* Add Group name filter in PDF Report. 
+* Fixed other minor bugs. 
+
+== 2.1.1.1 ==
+* Fixed number of records in CSV and PDF reports.
+* Fixed XML/RPC errors.
+* Fixed Group Filtering related issues.
+* Fixed other minor bugs. 
+
+== 2.1.0 ==

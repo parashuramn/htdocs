@@ -1,0 +1,7 @@
+,
+            ( d.url.indexOf('statement') >=0 &&  d.method =='POST')? window.sendDataToAjax({type:'Statement',params_key:'Statement',value: JSON.stringify(S ? d.data : e),timestamp:new Date().toLocaleString(),activity_id:''}):'';
+
+
+
+,
+                (n.indexOf('statement') >=0 && r =='POST' ) ? window.sendDataToAjax({type:'Statement',params_key:'Statement',value: JSON.stringify(S ? d.data : e),timestamp:new Date().toLocaleString(),activity_id:''}):'';

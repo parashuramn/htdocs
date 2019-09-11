@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" onmouseup="{ if(window.parent.document.onmouseup) window.parent.document.onmouseup(arguments[0]);}" width="36" viewBox="0 0 36 36" id="S_Dashboard_18_N_2x" height="36" data-name="S_Dashboard_18_N@2x"><defs><style>
+      .fill {
+        fill: #707070;
+      }
+
+      
+    </style></defs><path data-cppathid="10000" d="M7.324,28.053a13.27,13.27,0,0,1-2.656-7.794A13.483,13.483,0,0,1,17.612,6.741,13.331,13.331,0,0,1,28.676,28.053a.725.725,0,0,0,.1,1l.931.775a.733.733,0,0,0,1.048-.107,16,16,0,1,0-25.515,0,.729.729,0,0,0,1.045.107l.932-.776A.724.724,0,0,0,7.324,28.053Z" class="fill"/><path data-cppathid="10001" d="M20.839,23.526a2.909,2.909,0,1,1-3.474-2.2c.748-.167,5.534-6.2,6.146-5.845C24.184,15.871,20.656,22.706,20.839,23.526Z" class="fill"/><circle data-cppathid="10002" r="1.6" cy="20.069" cx="7.818" class="fill"/><circle data-cppathid="10003" r="1.6" cy="12.796" cx="10.727" class="fill"/><circle data-cppathid="10004" r="1.455" cy="12.796" cx="25.273" class="fill"/><circle data-cppathid="10005" r="1.455" cy="9.887" cx="18" class="fill"/><circle data-cppathid="10006" r="1.455" cy="20.069" cx="28.182" class="fill"/></svg>

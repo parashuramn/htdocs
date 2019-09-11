@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" onmouseup="{ if(window.parent.document.onmouseup) window.parent.document.onmouseup(arguments[0]);}" width="36" viewBox="0 0 36 36" id="S_Data_18_N_2x" height="36" data-name="S_Data_18_N@2x"><defs><style>
+      .fill {
+        fill: #707070;
+      }
+
+      
+    </style></defs><ellipse data-cppathid="10000" ry="5" rx="16" cy="7" cx="18" class="fill"/><path data-cppathid="10001" d="M18,24.275c-4.936,0-14.212-1.169-16-4V29c0,2.761,7.163,5,16,5s16-2.239,16-5V20.27C31.553,23.365,22.936,24.275,18,24.275Z" class="fill"/><path data-cppathid="10002" d="M18,14.275c-4.936,0-14.212-1.169-16-4.005V17c0,2.761,7.163,5,16,5s16-2.239,16-5V10.27C31.553,13.365,22.936,14.275,18,14.275Z" class="fill"/></svg>

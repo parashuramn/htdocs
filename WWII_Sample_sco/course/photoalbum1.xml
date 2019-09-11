@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<photoalbum>
+	<color>FCD3C4</color>
+	<hideBackground>false</hideBackground>
+	<photo>
+		<url>lessonimages/PAImage1_1.jpg</url>
+		<caption>View+along+the+River+Thames+towards+smoke+rising+from+the+London+docklands+after+an+air+raid+during+the+Blitz.</caption>
+	</photo>
+	<photo>
+		<url>lessonimages/PAImage1_2.jpg</url>
+		<caption>An+Air+raid+shelter+in+a+London+Underground+station+in+London+during+The+Blitz.</caption>
+	</photo>
+	<photo>
+		<url>lessonimages/PAImage1_3.jpg</url>
+		<caption>Building+on+fire+after+an+attack+during+The+Blitz%2C+probably+taken+in+London.</caption>
+	</photo>
+	<photo>
+		<url>lessonimages/PAImage1_4.jpg</url>
+		<caption>Firefighters+putting+out+a+blaze+in+London+after+an+air+raid+during+The+Blitz+in+1941.</caption>
+	</photo>
+	<photo>
+		<url>lessonimages/PAImage1_5.jpg</url>
+		<caption>Winston+Churchill+visiting+the+ruins+of+Coventry+Cathedral+following+its+destruction+in+the+Coventry+Blitz+of+November+1940.</caption>
+	</photo>
+	<photo>
+		<url>lessonimages/PAImage1_6.jpg</url>
+		<caption>Coventry+city+centre+following+the+Coventry+Blitz</caption>
+	</photo>
+	<photo>
+		<url>lessonimages/PAImage1_7.jpg</url>
+		<caption>Injuries+brought+about+during+the+bombing+of+London.</caption>
+	</photo>
+	<photo>
+		<url>lessonimages/PAImage1_8.jpg</url>
+		<caption>Children+of+London%2C+who+have+been+made+homeless+by+the+random+bombs+of+the+Nazi+night+raiders%2C+waiting+outside+the+wreckage+of+what+was+their+home.</caption>
+	</photo>
+</photoalbum>

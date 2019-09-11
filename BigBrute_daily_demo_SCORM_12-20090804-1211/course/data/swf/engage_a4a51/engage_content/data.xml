@@ -1,0 +1,14 @@
+<Interaction Type="Guided Image" Title="About Us" contentfont="Franklin Gothic Book" dotanimation="spin" defaultimage="false" jpegquality="100" autoplay="false" autoplayduration="5" headingfont="Franklin Gothic Demi" navfont="Franklin Gothic Demi" soundeffects="false" volumebutton="false" audioquality="custom" audiocustombitrate="br24Kbps" audiocustomfrequency="fq22KHz" audiocustomchannel="ccMono" navbuttons="true" forceorder="true" detectflashver="true" animation="fade" version="2.0.809.1113" borderstyle="none">
+  <resume id="2912f71a-4ece-40c3-8ee3-da77bbc429c2" enabled="false" />
+  <arrow color="0x003399" />
+  <diagram src="image1.jpg" percent="75" align="left" originalSource="imageSource1.jpg" width="284" height="266" />
+  <labels />
+  <introduction>
+    <steps>
+      <Step id="cbe9a45d-a275-44f3-8e79-91681483d7e2" name="Prometheus Training Corporation" title="" number="0" audioonly="false" html="&lt;p align='left'&gt;&lt;font face='Franklin Gothic Book' size='15' color=''&gt;Designed and developed by the creative team at Prometheus Training Corporation. To learn more about &lt;/font&gt;&lt;font face='Franklin Gothic Book' size='15' color='#000000'&gt;Prometheus, please visit us on the web at &lt;/font&gt;&lt;font face='Franklin Gothic Book' size='15' color='#ff8000'&gt;&lt;u&gt;&lt;a target='_blank' href='http://www.ptrain.com'&gt;http://www.ptrain.com&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;&lt;font face='Franklin Gothic Book' size='15' color='#000000'&gt;.&lt;/font&gt;&lt;/p&gt;" intro="true">
+      </Step>
+    </steps>
+  </introduction>
+  <nextslide enabled="False" text="" show="" />
+  <starttip show="false" text="Click next to continue" />
+</Interaction>

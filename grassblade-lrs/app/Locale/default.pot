@@ -1,0 +1,1975 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: AddOns/cloud_lrs/report-timespent-chart.ctp:20
+#: AddOns/cloud_lrs/timespent_graph.php:3;23;38
+#: Controller/ReportsController.php:764
+#: View/Elements/sidebar_menu.ctp:244;257
+#: View/Reports/attempts.ctp:35
+#: View/Reports/attempts_summary.ctp:37
+#: View/Reports/index.ctp:44
+#: View/Reports/timespent.ctp:9;22
+#: View/Statements/index.ctp:204
+msgid "Time Spent"
+msgstr ""
+
+#: AddOns/cloud_lrs/timespent_graph.php:20
+#: Controller/AddonsController.php:33
+#: View/Configure/backup.ctp:330;366;396
+#: View/Configure/integrations.ctp:51;57;130;136
+#: View/ErrorLogs/view.ctp:19
+#: View/Reports/agents.ctp:21
+#: View/Reports/attempts.ctp:25
+#: View/Reports/attempts_summary.ctp:28
+#: View/Reports/index.ctp:32
+#: View/Reports/timespent.ctp:20
+msgid "User"
+msgstr ""
+
+#: AddOns/extra_reports/functions.php:20
+msgid "Item Analysis"
+msgstr ""
+
+#: AddOns/extra_reports/View/item_analysis.ctp:21
+msgid "Questions"
+msgstr ""
+
+#: AddOns/extra_reports/View/item_analysis.ctp:32
+#: View/Groups/edit.ctp:127
+#: View/Reports/activities.ctp:20
+#: View/Reports/agents.ctp:20
+#: View/Reports/attempts.ctp:24
+#: View/Reports/attempts_summary.ctp:27
+#: View/Reports/index.ctp:30
+#: View/Reports/timespent.ctp:19
+#: View/Reports/verbs.ctp:29
+#: View/Users/edit.ctp:136
+msgid "S.No."
+msgstr ""
+
+#: AddOns/extra_reports/View/item_analysis.ctp:33
+msgid "Question"
+msgstr ""
+
+#: AddOns/extra_reports/View/item_analysis.ctp:36
+msgid "Item Difficulty"
+msgstr ""
+
+#: AddOns/extra_reports/View/item_analysis.ctp:37
+msgid "Discrimination Index"
+msgstr ""
+
+#: AddOns/extra_reports/View/item_analysis.ctp:38
+msgid "Characteristic Curve"
+msgstr ""
+
+#: AddOns/extra_reports/View/item_analysis.ctp:63
+#: View/Reports/attempts.ctp:67
+msgid "Responses"
+msgstr ""
+
+#: Controller/AddonsController.php:32
+#: View/Reports/activities.ctp:21
+#: View/Reports/attempts.ctp:27
+#: View/Reports/attempts_summary.ctp:30
+#: View/Reports/index.ctp:35
+#: View/Statements/index.ctp:120
+msgid "Activity"
+msgstr ""
+
+#: Controller/AddonsController.php:34
+msgid "Timestamp From"
+msgstr ""
+
+#: Controller/AddonsController.php:35
+msgid "Timestamp To"
+msgstr ""
+
+#: Controller/AddonsController.php:46
+#: View/Elements/filter_sidebar.ctp:192
+msgid "Parent Level"
+msgstr ""
+
+#: Controller/AddonsController.php:47;53
+msgid "Yes"
+msgstr ""
+
+#: Controller/AddonsController.php:52
+#: View/Elements/filter_sidebar.ctp:195
+msgid "Group Level"
+msgstr ""
+
+#: Controller/ConfigureController.php:86
+#: View/Configure/database.ctp:13;100
+msgid "Database Configuration"
+msgstr ""
+
+#: Controller/ConfigureController.php:88
+msgid "Could not connect to database."
+msgstr ""
+
+#: Controller/ConfigureController.php:99
+msgid "Database details verified successfully."
+msgstr ""
+
+#: Controller/ConfigureController.php:115
+msgid "Database details verified successfully but could not write database configuration file."
+msgstr ""
+
+#: Controller/ConfigureController.php:120
+msgid "Database file configured successfully."
+msgstr ""
+
+#: Controller/ConfigureController.php:126
+msgid "Could not connect to mysql server. Wrong database Host, Username, or Password."
+msgstr ""
+
+#: Controller/ConfigureController.php:129
+msgid "Could not select database. Wrong database name %s, or user %s doesn't have access to database."
+msgstr ""
+
+#: Controller/ConfigureController.php:136
+msgid "Database configured and connected."
+msgstr ""
+
+#: Controller/ConfigureController.php:148
+#: View/Elements/sidebar_menu.ctp:376
+msgid "Translations"
+msgstr ""
+
+#: Controller/ConfigureController.php:152
+#: View/Configure/license.ctp:7
+#: View/Elements/sidebar_menu.ctp:392
+msgid "License"
+msgstr ""
+
+#: Controller/ConfigureController.php:157
+msgid "Please enter License Email."
+msgstr ""
+
+#: Controller/ConfigureController.php:162
+msgid "Please enter License Key."
+msgstr ""
+
+#: Controller/ConfigureController.php:169
+msgid "License validated successfully. "
+msgstr ""
+
+#: Controller/ConfigureController.php:173;179
+msgid "Please enter a valid license."
+msgstr ""
+
+#: Controller/ConfigureController.php:182
+msgid "Valid license found."
+msgstr ""
+
+#: Controller/ConfigureController.php:187
+#: View/Elements/sidebar_menu.ctp:409
+msgid "Backup"
+msgstr ""
+
+#: Controller/ConfigureController.php:210
+#: View/Elements/sidebar_menu.ctp:400
+msgid "Integrations"
+msgstr ""
+
+#: Controller/ConfigureController.php:216
+msgid "Connected Successfully."
+msgstr ""
+
+#: Controller/ConfigureController.php:230
+msgid "The details have been saved. "
+msgstr ""
+
+#: Controller/ErrorLogsController.php:35
+#: View/Elements/sidebar_menu.ctp:366
+msgid "Error Logs"
+msgstr ""
+
+#: Controller/ErrorLogsController.php:60;91;115
+msgid "Invalid gb error log"
+msgstr ""
+
+#: Controller/ErrorLogsController.php:75;95
+msgid "The gb error log has been saved."
+msgstr ""
+
+#: Controller/ErrorLogsController.php:119
+msgid "The gb error log has been deleted."
+msgstr ""
+
+#: Controller/ErrorLogsController.php:121
+msgid "The gb error log could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/GroupsController.php:48;82
+msgid "The Group has been saved."
+msgstr ""
+
+#: Controller/GroupsController.php:51;85
+msgid "The Group could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/GroupsController.php:72;273
+msgid "Invalid Group"
+msgstr ""
+
+#: Controller/GroupsController.php:236
+#: View/Groups/edit.ctp:156
+msgid "Member"
+msgstr ""
+
+#: Controller/GroupsController.php:238
+#: View/Groups/edit.ctp:157
+msgid "Non-Member"
+msgstr ""
+
+#: Controller/GroupsController.php:241
+msgid "Not In LRS"
+msgstr ""
+
+#: Controller/GroupsController.php:278
+msgid "The Group has been deleted."
+msgstr ""
+
+#: Controller/GroupsController.php:280
+msgid "The Group could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/ReportsController.php:534
+#: View/Elements/sidebar_menu.ctp:5
+msgid "Dashboard"
+msgstr ""
+
+#: Controller/ReportsController.php:542
+#: View/Elements/filter_sidebar.ctp:101
+#: View/Elements/sidebar_menu.ctp:123
+#: View/Reports/activities.ctp:48
+#: View/Reports/agents.ctp:48
+#: View/Reports/timespent.ctp:47
+#: View/Reports/verbs.ctp:19
+msgid "Verbs"
+msgstr ""
+
+#: Controller/ReportsController.php:691
+#: View/Elements/filter_sidebar.ctp:83
+#: View/Elements/sidebar_menu.ctp:15
+#: View/Reports/activities.ctp:49
+#: View/Reports/verbs.ctp:56
+msgid "Users"
+msgstr ""
+
+#: Controller/ReportsController.php:859
+#: View/Elements/filter_sidebar.ctp:109
+#: View/Elements/sidebar_menu.ctp:157
+#: View/Reports/activities.ctp:10
+#: View/Reports/agents.ctp:49
+#: View/Reports/timespent.ctp:48
+#: View/Reports/verbs.ctp:55
+msgid "Activities"
+msgstr ""
+
+#: Controller/ReportsController.php:933
+#: View/Elements/sidebar_menu.ctp:74;82
+#: View/Reports/index.ctp:20
+msgid "Activity Stream"
+msgstr ""
+
+#: Controller/ReportsController.php:1199
+#: View/Elements/sidebar_menu.ctp:280;288
+#: View/Reports/attempts.ctp:14
+msgid "Attempts Report"
+msgstr ""
+
+#: Controller/ReportsController.php:1298
+#: View/Elements/sidebar_menu.ctp:308;316
+msgid "Attempts Summary"
+msgstr ""
+
+#: Controller/ReportsController.php:1556
+#: View/Reports/attempts.ctp:105
+#: View/Reports/attempts_summary.ctp:112
+msgid "Correct"
+msgstr ""
+
+#: Controller/ReportsController.php:1556
+#: View/Reports/attempts.ctp:105
+#: View/Reports/attempts_summary.ctp:112
+#: View/Statements/index.ctp:177
+msgid "Passed"
+msgstr ""
+
+#: Controller/ReportsController.php:1558
+#: View/Reports/attempts.ctp:107
+#: View/Reports/attempts_summary.ctp:114
+msgid "Wrong"
+msgstr ""
+
+#: Controller/ReportsController.php:1558
+#: View/ErrorLogs/index.ctp:57
+#: View/Reports/attempts.ctp:107
+#: View/Reports/attempts_summary.ctp:114
+#: View/Statements/index.ctp:179
+msgid "Failed"
+msgstr ""
+
+#: Controller/ReportsController.php:1562
+#: View/Reports/attempts.ctp:29
+#: View/Reports/attempts_summary.ctp:118
+#: View/Statements/index.ctp:173
+msgid "Completed"
+msgstr ""
+
+#: Controller/StatementsController.php:97;129;154
+msgid "Invalid gb statement"
+msgstr ""
+
+#: Controller/StatementsController.php:112;133
+msgid "The gb statement has been saved"
+msgstr ""
+
+#: Controller/StatementsController.php:115;136
+msgid "The gb statement could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/StatementsController.php:158
+msgid "Gb statement deleted"
+msgstr ""
+
+#: Controller/StatementsController.php:161
+msgid "Gb statement was not deleted"
+msgstr ""
+
+#: Controller/TriggersController.php:62;175
+msgid "Invalid URL. Trigger Deactivated."
+msgstr ""
+
+#: Controller/TriggersController.php:77
+msgid "The trigger has been saved. "
+msgstr ""
+
+#: Controller/TriggersController.php:83
+msgid "The trigger could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/TriggersController.php:130;242
+msgid "passed"
+msgstr ""
+
+#: Controller/TriggersController.php:132;244
+msgid "failed"
+msgstr ""
+
+#: Controller/TriggersController.php:134;246
+msgid "completed"
+msgstr ""
+
+#: Controller/TriggersController.php:149;277
+msgid "Invalid trigger"
+msgstr ""
+
+#: Controller/TriggersController.php:188
+msgid "Trigger updated."
+msgstr ""
+
+#: Controller/TriggersController.php:194
+#: Controller/UsersController.php:207
+msgid "Update failed. Please, try again."
+msgstr ""
+
+#: Controller/TriggersController.php:257
+#: Vendor/functions.php:776
+#: View/ErrorLogs/index.ctp:60
+#: View/Groups/edit.ctp:155
+msgid "All"
+msgstr ""
+
+#: Controller/TriggersController.php:281
+msgid "Trigger deleted"
+msgstr ""
+
+#: Controller/TriggersController.php:284
+msgid "Trigger was not deleted"
+msgstr ""
+
+#: Controller/UsersController.php:44;50
+msgid "Invalid email or password, try again"
+msgstr ""
+
+#: Controller/UsersController.php:102;111
+msgid "The user account has been created."
+msgstr ""
+
+#: Controller/UsersController.php:120;134
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:122;134
+msgid "User exists. "
+msgstr ""
+
+#: Controller/UsersController.php:150;230
+msgid "Invalid user"
+msgstr ""
+
+#: Controller/UsersController.php:155
+msgid "Permission Error"
+msgstr ""
+
+#: Controller/UsersController.php:171
+msgid "A new AuthToken has been generated."
+msgstr ""
+
+#: Controller/UsersController.php:178
+msgid "AuthToken deleted."
+msgstr ""
+
+#: Controller/UsersController.php:199;204
+msgid "Profile updated."
+msgstr ""
+
+#: Controller/UsersController.php:238;247
+msgid "User deleted"
+msgstr ""
+
+#: Controller/UsersController.php:254
+msgid "User was not deleted"
+msgstr ""
+
+#: Model/Group.php:184;214
+#: Vendor/functions.php:1038
+msgid "404 Not Found. Your wordpress url could be wrong."
+msgstr ""
+
+#: Model/User.php:71
+msgid "User not set."
+msgstr ""
+
+#: Vendor/functions.php:638
+msgid "A new version v%s of GrassBlade LRS is available."
+msgstr ""
+
+#: Vendor/functions.php:781
+msgid "View All Data"
+msgstr ""
+
+#: Vendor/functions.php:786
+msgid "View Own Data"
+msgstr ""
+
+#: Vendor/functions.php:791
+msgid "View Group Data"
+msgstr ""
+
+#: Vendor/functions.php:796
+msgid "View All Filters"
+msgstr ""
+
+#: Vendor/functions.php:802
+msgid "Manage Users"
+msgstr ""
+
+#: Vendor/functions.php:808
+msgid "Manage Groups"
+msgstr ""
+
+#: Vendor/functions.php:814
+msgid "Manage Triggers"
+msgstr ""
+
+#: Vendor/functions.php:819
+msgid "Manage Configuration"
+msgstr ""
+
+#: Vendor/functions.php:824
+msgid "View Error Logs"
+msgstr ""
+
+#: Vendor/gbdb.php:349
+msgid "Created table:"
+msgstr ""
+
+#: Vendor/gbdb.php:413;439
+msgid "Loaded %s ids from xml"
+msgstr ""
+
+#: View/Configure/backup.ctp:198
+msgid "1"
+msgstr ""
+
+#: View/Configure/backup.ctp:198;200;201
+msgid "STEP"
+msgstr ""
+
+#: View/Configure/backup.ctp:200
+msgid "2"
+msgstr ""
+
+#: View/Configure/backup.ctp:201
+msgid "3"
+msgstr ""
+
+#: View/Configure/backup.ctp:206
+msgid "Please, select what to backup!"
+msgstr ""
+
+#: View/Configure/backup.ctp:209
+#: View/Elements/sidebar_menu.ctp:384
+msgid "Database"
+msgstr ""
+
+#: View/Configure/backup.ctp:210
+msgid "Files"
+msgstr ""
+
+#: View/Configure/backup.ctp:213;232
+msgid "NEXT"
+msgstr ""
+
+#: View/Configure/backup.ctp:216
+msgid "Field settings!"
+msgstr ""
+
+#: View/Configure/backup.ctp:237
+msgid "Please, choose where to backup!"
+msgstr ""
+
+#: View/Configure/backup.ctp:243
+msgid "Delimeter"
+msgstr ""
+
+#: View/Configure/backup.ctp:253
+msgid "Root"
+msgstr ""
+
+#: View/Configure/backup.ctp:257
+msgid "Db tag"
+msgstr ""
+
+#: View/Configure/backup.ctp:261
+msgid "Db property"
+msgstr ""
+
+#: View/Configure/backup.ctp:265
+msgid "Table tag"
+msgstr ""
+
+#: View/Configure/backup.ctp:269
+msgid "Table property"
+msgstr ""
+
+#: View/Configure/backup.ctp:273
+msgid "Row table"
+msgstr ""
+
+#: View/Configure/backup.ctp:277
+msgid "Field table"
+msgstr ""
+
+#: View/Configure/backup.ctp:281
+msgid "Field property"
+msgstr ""
+
+#: View/Configure/backup.ctp:288
+msgid "Save to"
+msgstr ""
+
+#: View/Configure/backup.ctp:292
+#: View/Groups/edit.ctp:114
+msgid "Select..."
+msgstr ""
+
+#: View/Configure/backup.ctp:293
+msgid "Mail"
+msgstr ""
+
+#: View/Configure/backup.ctp:295
+#: View/Elements/filter_sidebar.ctp:216
+msgid "Save"
+msgstr ""
+
+#: View/Configure/backup.ctp:296
+msgid "FTP"
+msgstr ""
+
+#: View/Configure/backup.ctp:306
+#: View/Configure/integrations.ctp:17;108
+#: View/Users/login.ctp:11
+msgid "Email"
+msgstr ""
+
+#: View/Configure/backup.ctp:312
+msgid "Email From"
+msgstr ""
+
+#: View/Configure/backup.ctp:324;360;390
+#: View/Configure/integrations.ctp:113;119
+msgid "Server"
+msgstr ""
+
+#: View/Configure/backup.ctp:336;372;402
+#: View/Configure/database.ctp:52;55
+#: View/Configure/integrations.ctp:62;65;141;144
+#: View/Users/add.ctp:38;41
+#: View/Users/edit.ctp:38;41
+#: View/Users/login.ctp:18;21
+msgid "Password"
+msgstr ""
+
+#: View/Configure/backup.ctp:348
+msgid "Path"
+msgstr ""
+
+#: View/Configure/backup.ctp:378
+msgid "Path for saving"
+msgstr ""
+
+#: View/Configure/backup.ctp:411
+msgid "Remove after sending"
+msgstr ""
+
+#: View/Configure/backup.ctp:422
+msgid "CRON"
+msgstr ""
+
+#: View/Configure/backup.ctp:423
+msgid "CREATE"
+msgstr ""
+
+#: View/Configure/backup.ctp:434
+msgid "Processing Database Backup"
+msgstr ""
+
+#: View/Configure/backup.ctp:437
+msgid "Processing File Backup"
+msgstr ""
+
+#: View/Configure/database.ctp:4
+msgid "Please check your database configuration."
+msgstr ""
+
+#: View/Configure/database.ctp:32
+msgid "Host"
+msgstr ""
+
+#: View/Configure/database.ctp:42
+msgid "Username"
+msgstr ""
+
+#: View/Configure/database.ctp:63
+msgid "Database Name"
+msgstr ""
+
+#: View/Configure/database.ctp:73
+msgid "Database Prefix"
+msgstr ""
+
+#: View/Configure/database.ctp:79
+msgid "If you are using LRS along with wordpress, we recommend using the same database configuration as wordpress for a better integration."
+msgstr ""
+
+#: View/Configure/database.ctp:101
+msgid "Please create or replace the file (%s) with following code:"
+msgstr ""
+
+#: View/Configure/integrations.ctp:12
+msgid "WordPress"
+msgstr ""
+
+#: View/Configure/integrations.ctp:22;167
+msgid "SSO"
+msgstr ""
+
+#: View/Configure/integrations.ctp:40;46
+msgid "WordPress URL"
+msgstr ""
+
+#: View/Configure/integrations.ctp:78
+msgid "Test"
+msgstr ""
+
+#: View/Configure/integrations.ctp:92
+msgid "Email SMTP"
+msgstr ""
+
+#: View/Configure/integrations.ctp:102
+msgid "Default From Email"
+msgstr ""
+
+#: View/Configure/integrations.ctp:124
+msgid "Port"
+msgstr ""
+
+#: View/Configure/integrations.ctp:177;183
+msgid "IP/Domain"
+msgstr ""
+
+#: View/Configure/integrations.ctp:186
+msgid "IP or Domain of the site from where users will SSO to the LRS"
+msgstr ""
+
+#: View/Configure/license.ctp:26
+msgid "License Domain"
+msgstr ""
+
+#: View/Configure/license.ctp:36
+msgid "License Email"
+msgstr ""
+
+#: View/Configure/license.ctp:49
+msgid "License Key"
+msgstr ""
+
+#: View/Configure/translations.ctp:14
+msgid "Load ID Translations"
+msgstr ""
+
+#: View/Configure/translations.ctp:24
+msgid "Option 1:"
+msgstr ""
+
+#: View/Configure/translations.ctp:25
+msgid "Load from tincan.xml URL:"
+msgstr ""
+
+#: View/Configure/translations.ctp:32
+msgid "Option 2:"
+msgstr ""
+
+#: View/Configure/translations.ctp:33
+msgid "Load automatically from"
+msgstr ""
+
+#: View/Configure/translations.ctp:33
+msgid "GrassBlade xAPI Companion"
+msgstr ""
+
+#: View/Configure/translations.ctp:39
+msgid "GrassBlade LRS should be installed on the same database as your WordPress instance for Option 2 to work."
+msgstr ""
+
+#: View/Elements/dashboard-chart.ctp:10
+msgid "%s Day Summary"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:43
+#: View/Elements/sidebar_menu.ctp:90;144;176;231;267;295;323
+#: View/Statements/index.ctp:107
+msgid "Filters"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:48
+#: View/Groups/edit.ctp:162
+msgid "Search"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:48
+msgid "7"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:63
+msgid "Date Range"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:127
+#: View/Reports/attempts.ctp:31
+#: View/Reports/attempts_summary.ctp:35
+#: View/Reports/index.ctp:40
+#: View/Statements/index.ctp:186
+msgid "Score"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:135;150
+#: View/Reports/attempts.ctp:33
+#: View/Reports/index.ctp:42
+#: View/Statements/index.ctp:198
+msgid "Min"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:136;151
+#: View/Reports/attempts.ctp:34
+#: View/Reports/index.ctp:43
+#: View/Statements/index.ctp:201
+msgid "Max"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:142
+msgid "Score Percentage"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:157
+msgid "Group"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:166
+msgid "Content Filter"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:185
+msgid "Activity Level"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:189
+msgid "Include Sub Activities"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:189;192;195;206
+#: View/Triggers/edit.ctp:97
+#: View/Triggers/index.ctp:35
+msgid "ON"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:189;192;195;206
+#: View/Triggers/edit.ctp:97
+#: View/Triggers/index.ctp:35
+msgid "OFF"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:199
+msgid "Filter"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:200
+msgid "Hide"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:206
+msgid "Save/Edit Filter"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:211
+msgid "Filter Name"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:216
+msgid "Update"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:224
+msgid "Saved Filters"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:241
+msgid "Set up Automated Emails"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:248
+msgid "Every Hour"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:249
+msgid "Every Day"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:250
+msgid "Every Week"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:251
+msgid "Every Month"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:252
+msgid "Every Year"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:262;285
+msgid "Email ID(s)"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:263;286
+msgid "No of Previous Days to Report"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:264
+#: View/ErrorLogs/view.ctp:14
+#: View/Groups/add.ctp:27
+#: View/Groups/edit.ctp:44
+#: View/Triggers/add.ctp:33
+#: View/Triggers/edit.ctp:33
+msgid "Type"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:265
+msgid "Frequency"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:288
+msgid "Set Frequency"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:297
+msgid "e.g. 10:00AM"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:299
+msgid "CSV"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:300
+msgid "PDF"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:309
+msgid "ADD"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:310
+msgid "Cancel"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:333
+msgid "To send emails please make sure Cron Job is setup. Last Run: %s. <br>\n\t\t\t\t\t\t\t\t\t\tCron URL: <b>%s</b>"
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:344
+msgid "To send emails please make sure <a href='%s'>SMTP details</a> are configured."
+msgstr ""
+
+#: View/Elements/filter_sidebar.ctp:538
+msgid "Selected Columns"
+msgstr ""
+
+#: View/Elements/header.ctp:34
+msgid "My Profile"
+msgstr ""
+
+#: View/Elements/header.ctp:40
+msgid "Log Out"
+msgstr ""
+
+#: View/Elements/help.ctp:9
+msgid "Activity Stream is a chronological listing of all the statements received by the LRS."
+msgstr ""
+
+#: View/Elements/help.ctp:11;34
+msgid "<b>Summary Chart</b> shows you the amount of activity happening in the LRS in a visual representation. It plots the number of statements and the number of unique verbs per day."
+msgstr ""
+
+#: View/Elements/help.ctp:12
+msgid "<b>Score Distribution Chart:</b> When you have selected a sepecific Activity that has scores, you can see this chart. By default, it shows a bell chart with normal score distribution of first scores of each user who attempted this activity. You can select between First Attempt, Minimum Score, Maximum Score and Average Score to plot chart. It also shows the scores and its frequency on the chart as dots. You can also see the mean/average score, and latest scores by specific selected users (if users are also selected) as vertical lines."
+msgstr ""
+
+#: View/Elements/help.ctp:13
+msgid "<b>Timestamp</b> is the time when the statement occurred."
+msgstr ""
+
+#: View/Elements/help.ctp:14
+msgid "<b>User</b> here are the users performing the action in a statement."
+msgstr ""
+
+#: View/Elements/help.ctp:15
+msgid "<b>Verb</b> defines the action between Actor and Activity."
+msgstr ""
+
+#: View/Elements/help.ctp:16;55;82
+msgid "<b>Activity</b> is something with which an Actor interacted. It can be a unit of instruction, course, module, question, experience, or performance that is to be tracked in meaningful combination with a Verb."
+msgstr ""
+
+#: View/Elements/help.ctp:17
+msgid "<b>Result, Percentage, Score, Min, Max</b> columns show the results and score information and are self explainatory."
+msgstr ""
+
+#: View/Elements/help.ctp:18
+msgid "<b>Response</b> columns show any text response made by the Actor in the statment."
+msgstr ""
+
+#: View/Elements/help.ctp:19
+msgid "Click %s icon to see aditional options to view details, see similar statements or re-run triggers."
+msgstr ""
+
+#: View/Elements/help.ctp:20
+msgid "Click %s icon to download the report in csv format which works with Excel, Numbers or any other spreadsheet applications."
+msgstr ""
+
+#: View/Elements/help.ctp:21
+msgid "Click %s icon to download the report in PDF format."
+msgstr ""
+
+#: View/Elements/help.ctp:22
+msgid "Click %s icon to print the current report page."
+msgstr ""
+
+#: View/Elements/help.ctp:23
+msgid "Click %s icon to filter the results."
+msgstr ""
+
+#: View/Elements/help.ctp:32
+msgid "Dashboard gives you a glimpse of your entire LRS."
+msgstr ""
+
+#: View/Elements/help.ctp:35
+msgid "<b>Statements</b> are independent pieces of information received by the LRS as a representation of an activity or experience which has occurred."
+msgstr ""
+
+#: View/Elements/help.ctp:36
+msgid "<b>Agents</b> are the users performing the action in a statement. Dashboard shows the total number of unique Agents or Users across all the statements. Agents are sometimes reffered as User, specially on reports."
+msgstr ""
+
+#: View/Elements/help.ctp:37
+msgid "<b>Users</b> are individual accounts that have access to the LRS."
+msgstr ""
+
+#: View/Elements/help.ctp:38
+msgid "<b>Verbs</b> defines the action between Actor and Activity."
+msgstr ""
+
+#: View/Elements/help.ctp:39
+msgid "<b>Activities</b> are something with which an Actor interacted. It can be a unit of instruction, course, module, question, experience, or performance that is to be tracked in meaningful combination with a Verb."
+msgstr ""
+
+#: View/Elements/help.ctp:40
+msgid "<b>Parent Level Activities</b> are higher level activities specified as parent of another activity in a statement. e.g. A course is parent of a lesson."
+msgstr ""
+
+#: View/Elements/help.ctp:41
+msgid "<b>Group Level Activities</b> are higher level activities specified as grouping of another activity in a statement. e.g. A course and/or a lesson can be group level activity for a topic."
+msgstr ""
+
+#: View/Elements/help.ctp:42;144;161
+msgid "<b>Triggers</b> are certain actions to be performed when a matching statement is received. e.g. Triggering completion when a course <i>completed</i> statement is received."
+msgstr ""
+
+#: View/Elements/help.ctp:50
+msgid "Attempts Report shows a list of individual attempts to an Activity made by a user."
+msgstr ""
+
+#: View/Elements/help.ctp:52;79
+msgid "<b>User/Agent</b> is the users performing the action in a statement."
+msgstr ""
+
+#: View/Elements/help.ctp:53;80
+msgid "<b>Started</b> is the time when the user started the attempt."
+msgstr ""
+
+#: View/Elements/help.ctp:54;81
+msgid "<b>Completed</b> is the time when the user completed the attempt."
+msgstr ""
+
+#: View/Elements/help.ctp:56;83
+msgid "<b>Result</b> shows the scores, answers, time-spent or other result related details sent in the statement."
+msgstr ""
+
+#: View/Elements/help.ctp:57
+msgid "<b>View</b> You can view the <b>details</b> showing a list of all the statements in that attempt, or the <b>json</b> string of the last statement in the attempt."
+msgstr ""
+
+#: View/Elements/help.ctp:58;85
+msgid "Click %s to download the report in csv format which works with Excel, Numbers or any other spreadsheet applications."
+msgstr ""
+
+#: View/Elements/help.ctp:59;86
+msgid "Click %s to print the current report page. You can also use free 3rd party software like PrimoPDF or doPDF to print the report to pdf."
+msgstr ""
+
+#: View/Elements/help.ctp:62;89
+msgid "Filters:"
+msgstr ""
+
+#: View/Elements/help.ctp:64;91
+msgid "<b>Search this page</b> input box filters the results available on the page. It doesn't search or filter through the rest of pages."
+msgstr ""
+
+#: View/Elements/help.ctp:65;92
+msgid " at the top right of the page brings the filter box which can be used to filter the results on the page."
+msgstr ""
+
+#: View/Elements/help.ctp:66;93
+msgid "<b>Add to Filter</b> link visible on hovering over the results adds the data to the filter and also brings the filter box which can be used to filter the results on the page."
+msgstr ""
+
+#: View/Elements/help.ctp:67;94
+msgid "<b>Apply Filters</b> does the actual task of filtering the results."
+msgstr ""
+
+#: View/Elements/help.ctp:68;95
+msgid "<b>Clear</b> removes the filters and reloads the page without any filters applied."
+msgstr ""
+
+#: View/Elements/help.ctp:69;96
+msgid "Clicking on a User, Verb, Activity or another <b>link</b> on the table will immediately filter the results by the data you clicked."
+msgstr ""
+
+#: View/Elements/help.ctp:77
+msgid "Attempts Summary shows a summary of attempts made on each parent+group level activity."
+msgstr ""
+
+#: View/Elements/help.ctp:83
+msgid "Result of the last attempt is shown in this report."
+msgstr ""
+
+#: View/Elements/help.ctp:84
+msgid "<b>View</b> You can view the <b>details</b> showing a list of all the statements for this activity, or the <b>json</b> string of the last statement. You can also see the list of <b>attempts</b> for the activity."
+msgstr ""
+
+#: View/Elements/help.ctp:103
+msgid "This page shows the list of users having access to the LRS."
+msgstr ""
+
+#: View/Elements/help.ctp:105;116
+msgid "<b>Admin</b> users have full access to the LRS."
+msgstr ""
+
+#: View/Elements/help.ctp:106
+msgid "<b>User</b> users has access to all the sections except the Users section on the site. i.e. they cannot view, edit or delete users."
+msgstr ""
+
+#: View/Elements/help.ctp:114
+msgid "You can add/edit user details and also create AuthTokens on this page."
+msgstr ""
+
+#: View/Elements/help.ctp:117
+msgid "<b>User</b> users have access to all the sections except the Users section on the site. i.e. they cannot view, edit or delete users."
+msgstr ""
+
+#: View/Elements/help.ctp:118
+msgid "<b>AuthToken</b> is the access token required by LMS or Tin Can content to send statements to the LRS. It consists of 3 things: EndPoint, API User, API Password. These three things are all you need to configure in your LMS, or Content or GrassBlade Plugin on WordPress."
+msgstr ""
+
+#: View/Elements/help.ctp:126
+msgid "Some authoring tools like Articulate so far don't send important human readable details in the statements like Course Name, Question Text, Answer Text, Slide Name, etc. These are shown on the reports as complicated ID's which don't make much sense. This section helps you import the tincan.xml file included in the Tin Can package which contains the meaningful human readable translations."
+msgstr ""
+
+#: View/Elements/help.ctp:128
+msgid "<b>Load from tincan.xml URL:</b> If you have uploaded the tincan.xml file and have the url. You can load it directly."
+msgstr ""
+
+#: View/Elements/help.ctp:129
+msgid "<b>Load from GrassBlade:</b> If you have uploaded your content to WordPress using GrassBlade xAPI Companion, and if the LRS is installed on the same database, you can use this button to import all tincan.xml files at once."
+msgstr ""
+
+#: View/Elements/help.ctp:132
+msgid "Loading the tincan.xml files here means that the translations will be stored in the database, and the reports will show the human readable text instead of ID's"
+msgstr ""
+
+#: View/Elements/help.ctp:138
+msgid "This page helps you create the required file for database configuration."
+msgstr ""
+
+#: View/Elements/help.ctp:146;164
+msgid "<b>Type</b> decides what the trigger does."
+msgstr ""
+
+#: View/Elements/help.ctp:148;166
+msgid "<b>completion</b> will send a completion trigger to the GrassBlade xAPI Companion WordPress plugin. The action generated by it is in turn used by other plugins like LearnDash to mark the content as completed. "
+msgstr ""
+
+#: View/Elements/help.ctp:149;167
+msgid "<b>POST to URL(POST/GET) </b> are for webhooks, it will post the statement to the specified url. This can then be processed by the script on that url to do further processing."
+msgstr ""
+
+#: View/Elements/help.ctp:150;168
+msgid "<b>Email</b> will send an email alert when a matching statement is received."
+msgstr ""
+
+#: View/Elements/help.ctp:150;151;168;169
+msgid "Coming Soon!"
+msgstr ""
+
+#: View/Elements/help.ctp:151;169
+msgid "<b>SMS</b> will send an SMS alert when a matching statement is received."
+msgstr ""
+
+#: View/Elements/help.ctp:154;178
+msgid "<b>Status:</b> Active triggers will be executed on a matching statement. InActive triggers will not be executed on a match."
+msgstr ""
+
+#: View/Elements/help.ctp:163
+msgid "<b>Name</b> is just a reference to easily remind what the trigger is for."
+msgstr ""
+
+#: View/Elements/help.ctp:172
+msgid "<b>URL</b> is url of WordPress site in case on <i>completion</i> trigger, and is URL of the webhook for the <i>POST to URL</i> triggers."
+msgstr ""
+
+#: View/Elements/help.ctp:173
+msgid "<b>Criterion</b> decides the match with a statement. If a matching statement is received, the trigger is executed."
+msgstr ""
+
+#: View/Elements/help.ctp:175
+msgid "<b>Verb</b>: When a statement with this verb is received, the trigger gets executed. "
+msgstr ""
+
+#: View/Elements/help.ctp:184
+msgid "No help information available for this page."
+msgstr ""
+
+#: View/Elements/page_header.ctp:19
+msgid "Home"
+msgstr ""
+
+#: View/Elements/page_header.ctp:35
+#: View/ErrorLogs/index.ctp:87
+#: View/Groups/edit.ctp:139
+#: View/Groups/index.ctp:27
+#: View/Statements/add.ctp:35
+#: View/Statements/edit.ctp:36
+#: View/Statements/view.ctp:132
+#: View/Triggers/index.ctp:26
+#: View/Users/index.ctp:28
+msgid "Actions"
+msgstr ""
+
+#: View/Elements/page_header.ctp:39
+msgid "Help"
+msgstr ""
+
+#: View/Elements/page_header.ctp:51
+msgid "About this page"
+msgstr ""
+
+#: View/Elements/page_header.ctp:57
+msgid "Close"
+msgstr ""
+
+#: View/Elements/report-bell-chart.ctp:17
+msgid "Score Distribution Chart"
+msgstr ""
+
+#: View/Elements/report-bell-chart.ctp:26
+msgid "Score Options"
+msgstr ""
+
+#: View/Elements/report-bell-chart.ctp:30
+msgid "First Attempt"
+msgstr ""
+
+#: View/Elements/report-bell-chart.ctp:33
+msgid "Maximum Score"
+msgstr ""
+
+#: View/Elements/report-bell-chart.ctp:36
+msgid "Minimum Score"
+msgstr ""
+
+#: View/Elements/report-bell-chart.ctp:39
+msgid "Average Score"
+msgstr ""
+
+#: View/Elements/report-bell-chart.ctp:48
+msgid "Not enough data to generate chart."
+msgstr ""
+
+#: View/Elements/report_footer.ctp:6
+msgid "Page {:page} of {:pages}, showing {:start} to {:end} of {:count}."
+msgstr ""
+
+#: View/Elements/report_footer.ctp:8
+msgid "Page {:page}, showing {:start} to {:end}."
+msgstr ""
+
+#: View/Elements/report_footer.ctp:15
+#: View/ErrorLogs/index.ctp:149
+#: View/Groups/index.ctp:63
+#: View/Statements/index.ctp:241
+#: View/Triggers/index.ctp:60
+#: View/Users/index.ctp:62
+msgid "previous"
+msgstr ""
+
+#: View/Elements/report_footer.ctp:17
+#: View/ErrorLogs/index.ctp:151
+#: View/Groups/index.ctp:65
+#: View/Statements/index.ctp:243
+#: View/Triggers/index.ctp:62
+#: View/Users/index.ctp:64
+msgid "next"
+msgstr ""
+
+#: View/Elements/report_tools.ctp:32
+msgid "Choose the columns you want to see"
+msgstr ""
+
+#: View/Elements/report_tools.ctp:33
+msgid "Columns"
+msgstr ""
+
+#: View/Elements/report_tools.ctp:47
+msgid "Download CSV"
+msgstr ""
+
+#: View/Elements/report_tools.ctp:48
+msgid "Download PDF"
+msgstr ""
+
+#: View/Elements/sidebar_menu.ctp:19
+msgid "Admins and Managers, and their permission and auth tokens"
+msgstr ""
+
+#: View/Elements/sidebar_menu.ctp:24
+msgid "All Users"
+msgstr ""
+
+#: View/Elements/sidebar_menu.ctp:32;57;349
+#: View/Groups/index.ctp:3
+#: View/Triggers/index.ctp:3
+#: View/Users/index.ctp:3
+msgid "Add New"
+msgstr ""
+
+#: View/Elements/sidebar_menu.ctp:42
+msgid "Groups"
+msgstr ""
+
+#: View/Elements/sidebar_menu.ctp:50
+msgid "All Groups"
+msgstr ""
+
+#: View/Elements/sidebar_menu.ctp:67;543
+#: View/Statements/index.ctp:104
+msgid "Reports"
+msgstr ""
+
+#: View/Elements/sidebar_menu.ctp:83
+msgid "Stream of all statements received by the LRS."
+msgstr ""
+
+#: View/Elements/sidebar_menu.ctp:99;185
+#: View/Reports/agents.ctp:50
+#: View/Reports/timespent.ctp:49
+#: View/Reports/verbs.ctp:57
+msgid "Parent Level Activities"
+msgstr ""
+
+#: View/Elements/sidebar_menu.ctp:100;186
+msgid "Generally your course level data."
+msgstr ""
+
+#: View/Elements/sidebar_menu.ctp:108
+msgid "Question Attempts"
+msgstr ""
+
+#: View/Elements/sidebar_menu.ctp:109
+msgid "Stream of all answered questions."
+msgstr ""
+
+#: View/Elements/sidebar_menu.ctp:134
+msgid "List of Verbs"
+msgstr ""
+
+#: View/Elements/sidebar_menu.ctp:167
+msgid "List of Activities"
+msgstr ""
+
+#: View/Elements/sidebar_menu.ctp:196
+msgid "Question Analysis"
+msgstr ""
+
+#: View/Elements/sidebar_menu.ctp:197
+msgid "All questions and related data."
+msgstr ""
+
+#: View/Elements/sidebar_menu.ctp:211
+#: View/Reports/agents.ctp:10
+msgid "Agents"
+msgstr ""
+
+#: View/Elements/sidebar_menu.ctp:213
+msgid "Your students or users and their related data"
+msgstr ""
+
+#: View/Elements/sidebar_menu.ctp:222
+msgid "List of Agents"
+msgstr ""
+
+#: View/Elements/sidebar_menu.ctp:246
+msgid "Total Time Spent by Users"
+msgstr ""
+
+#: View/Elements/sidebar_menu.ctp:335
+#: View/Triggers/index.ctp:10
+msgid "Triggers"
+msgstr ""
+
+#: View/Elements/sidebar_menu.ctp:342
+msgid "All Triggers"
+msgstr ""
+
+#: View/Elements/sidebar_menu.ctp:359
+msgid "Configure"
+msgstr ""
+
+#: View/ErrorLogs/index.ctp:58
+msgid "Incomplete/Interrupted"
+msgstr ""
+
+#: View/ErrorLogs/index.ctp:59
+msgid "Success"
+msgstr ""
+
+#: View/ErrorLogs/index.ctp:131
+#: View/Statements/index.ctp:125
+msgid "View"
+msgstr ""
+
+#: View/ErrorLogs/index.ctp:134
+msgid "Re-Triggers"
+msgstr ""
+
+#: View/ErrorLogs/index.ctp:144
+#: View/Groups/index.ctp:58
+#: View/Statements/index.ctp:236
+#: View/Triggers/index.ctp:55
+#: View/Users/index.ctp:57
+msgid "Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}"
+msgstr ""
+
+#: View/ErrorLogs/view.ctp:9
+#: View/Statements/view.ctp:4
+msgid "Id"
+msgstr ""
+
+#: View/ErrorLogs/view.ctp:24
+#: View/Statements/view.ctp:9
+msgid "Statement Id"
+msgstr ""
+
+#: View/ErrorLogs/view.ctp:29
+msgid "Url"
+msgstr ""
+
+#: View/ErrorLogs/view.ctp:34
+msgid "Request Method"
+msgstr ""
+
+#: View/ErrorLogs/view.ctp:39
+msgid "Data"
+msgstr ""
+
+#: View/ErrorLogs/view.ctp:51
+msgid "Error Msg"
+msgstr ""
+
+#: View/ErrorLogs/view.ctp:56
+msgid "Error Code"
+msgstr ""
+
+#: View/ErrorLogs/view.ctp:61
+#: View/Reports/attempts.ctp:36
+#: View/Reports/index.ctp:47
+#: View/Statements/index.ctp:182
+msgid "Response"
+msgstr ""
+
+#: View/ErrorLogs/view.ctp:73
+msgid "IP"
+msgstr ""
+
+#: View/ErrorLogs/view.ctp:78
+msgid "Created"
+msgstr ""
+
+#: View/ErrorLogs/view.ctp:83
+msgid "Modified"
+msgstr ""
+
+#: View/Groups/add.ctp:5
+msgid "Add Group"
+msgstr ""
+
+#: View/Groups/add.ctp:19
+#: View/Groups/edit.ctp:31;130
+#: View/Triggers/add.ctp:25
+#: View/Triggers/edit.ctp:25
+#: View/Users/add.ctp:19
+#: View/Users/edit.ctp:19
+msgid "Name"
+msgstr ""
+
+#: View/Groups/add.ctp:21
+#: View/Groups/edit.ctp:35
+#: View/Users/add.ctp:21
+#: View/Users/edit.ctp:21
+msgid "Enter Name"
+msgstr ""
+
+#: View/Groups/add.ctp:39
+#: View/Groups/edit.ctp:59
+msgid "Group Leaders"
+msgstr ""
+
+#: View/Groups/edit.ctp:17
+msgid "Edit Group"
+msgstr ""
+
+#: View/Groups/edit.ctp:105
+msgid "Group Membership"
+msgstr ""
+
+#: View/Groups/edit.ctp:115
+msgid "Add to Group"
+msgstr ""
+
+#: View/Groups/edit.ctp:116
+msgid "Remove from Group"
+msgstr ""
+
+#: View/Groups/edit.ctp:118
+#: View/Statements/add.ctp:32
+#: View/Statements/edit.ctp:33
+msgid "Submit"
+msgstr ""
+
+#: View/Groups/edit.ctp:133
+msgid "Email or ID"
+msgstr ""
+
+#: View/Groups/edit.ctp:136
+msgid "Membership"
+msgstr ""
+
+#: View/Groups/edit.ctp:163
+msgid "Reset"
+msgstr ""
+
+#: View/Groups/index.ctp:10
+msgid "Groups List"
+msgstr ""
+
+#: View/Groups/index.ctp:40
+#: View/Triggers/index.ctp:40
+#: View/Users/index.ctp:42
+msgid "Edit"
+msgstr ""
+
+#: View/Groups/index.ctp:41
+#: View/Statements/edit.ctp:39
+#: View/Triggers/index.ctp:41
+#: View/Users/edit.ctp:151
+#: View/Users/index.ctp:43
+msgid "Delete"
+msgstr ""
+
+#: View/Groups/index.ctp:45
+#: View/Statements/edit.ctp:39
+#: View/Statements/view.ctp:135
+#: View/Triggers/index.ctp:43
+#: View/Users/index.ctp:45
+msgid "Are you sure you want to delete # %s?"
+msgstr ""
+
+#: View/Layouts/login.ctp:10
+#: View/Users/login.ctp:27
+msgid "Login"
+msgstr ""
+
+#: View/Pages/home.ctp:19
+msgid "home"
+msgstr ""
+
+#: View/Reports/activities.ctp:22
+#: View/Reports/agents.ctp:23
+#: View/Reports/verbs.ctp:32
+msgid "Number of Statements"
+msgstr ""
+
+#: View/Reports/activities.ctp:45
+#: View/Reports/agents.ctp:45
+#: View/Reports/timespent.ctp:44
+#: View/Reports/verbs.ctp:54
+msgid "Last 10 Statements"
+msgstr ""
+
+#: View/Reports/activities.ctp:46
+#: View/Reports/agents.ctp:46
+#: View/Reports/attempts_summary.ctp:33
+#: View/Reports/index.ctp:37
+#: View/Reports/timespent.ctp:45
+msgid "Attempts"
+msgstr ""
+
+#: View/Reports/activities.ctp:47
+#: View/Reports/agents.ctp:47
+#: View/Reports/timespent.ctp:46
+msgid "Attempt Summary"
+msgstr ""
+
+#: View/Reports/agents.ctp:22
+#: View/Reports/timespent.ctp:21
+msgid "User Email/ID"
+msgstr ""
+
+#: View/Reports/attempts.ctp:26
+#: View/Reports/attempts_summary.ctp:29
+msgid "User ID/Email"
+msgstr ""
+
+#: View/Reports/attempts.ctp:28
+msgid "Started"
+msgstr ""
+
+#: View/Reports/attempts.ctp:30
+#: View/Statements/index.ctp:121
+msgid "Result"
+msgstr ""
+
+#: View/Reports/attempts.ctp:32
+#: View/Reports/attempts_summary.ctp:36
+#: View/Reports/index.ctp:41
+msgid "Percentage"
+msgstr ""
+
+#: View/Reports/attempts.ctp:37
+#: View/Reports/index.ctp:48
+msgid "Extra Info"
+msgstr ""
+
+#: View/Reports/attempts.ctp:66
+msgid "Attempt Details"
+msgstr ""
+
+#: View/Reports/attempts_summary.ctp:17
+msgid "Attempts Summary Report"
+msgstr ""
+
+#: View/Reports/attempts_summary.ctp:31
+msgid "Started On"
+msgstr ""
+
+#: View/Reports/attempts_summary.ctp:32
+msgid "Completed On"
+msgstr ""
+
+#: View/Reports/attempts_summary.ctp:68
+msgid "Related Activities"
+msgstr ""
+
+#: View/Reports/attempts_summary.ctp:102
+#: View/Statements/index.ctp:154;160;169
+msgid "Add to Filter"
+msgstr ""
+
+#: View/Reports/attempts_summary.ctp:102
+msgid "From"
+msgstr ""
+
+#: View/Reports/attempts_summary.ctp:103
+msgid "To"
+msgstr ""
+
+#: View/Reports/index.ctp:31
+#: View/Statements/view.ctp:74
+msgid "Timestamp"
+msgstr ""
+
+#: View/Reports/index.ctp:45
+msgid "Choices"
+msgstr ""
+
+#: View/Reports/index.ctp:46
+msgid "Correct Response"
+msgstr ""
+
+#: View/Reports/index.ctp:84
+msgid "JSON Statement as received by the LRS"
+msgstr ""
+
+#: View/Reports/index.ctp:84
+#: View/Statements/index.ctp:211
+msgid "JSON"
+msgstr ""
+
+#: View/Reports/index.ctp:85
+msgid "Complete Statement in tabular form."
+msgstr ""
+
+#: View/Reports/index.ctp:85
+msgid "Details"
+msgstr ""
+
+#: View/Reports/index.ctp:86
+msgid "Statements with same User, Verb and Activity"
+msgstr ""
+
+#: View/Reports/index.ctp:86
+msgid "Repetition"
+msgstr ""
+
+#: View/Reports/index.ctp:87
+msgid "Re-run all the triggers for this statement"
+msgstr ""
+
+#: View/Reports/index.ctp:87
+msgid "Re-run triggers"
+msgstr ""
+
+#: View/Reports/verbs.ctp:30
+#: View/Statements/view.ctp:39
+#: View/Triggers/add.ctp:63
+#: View/Triggers/edit.ctp:63
+msgid "Verb"
+msgstr ""
+
+#: View/Reports/verbs.ctp:31
+msgid "Verb ID"
+msgstr ""
+
+#: View/Statements/add.ctp:4
+msgid "Add Gb Statement"
+msgstr ""
+
+#: View/Statements/add.ctp:38
+#: View/Statements/edit.ctp:40
+#: View/Statements/view.ctp:136
+msgid "List Gb Statements"
+msgstr ""
+
+#: View/Statements/edit.ctp:4
+msgid "Edit Statement"
+msgstr ""
+
+#: View/Statements/index.ctp:118
+msgid "Agent"
+msgstr ""
+
+#: View/Statements/index.ctp:210
+msgid "DETAILS"
+msgstr ""
+
+#: View/Statements/view.ctp:2
+msgid "Gb Statement"
+msgstr ""
+
+#: View/Statements/view.ctp:14
+msgid "Agent Name"
+msgstr ""
+
+#: View/Statements/view.ctp:19
+msgid "Agent Mbox"
+msgstr ""
+
+#: View/Statements/view.ctp:24
+msgid "User Id"
+msgstr ""
+
+#: View/Statements/view.ctp:29
+msgid "Version"
+msgstr ""
+
+#: View/Statements/view.ctp:34
+msgid "Verb Id"
+msgstr ""
+
+#: View/Statements/view.ctp:44
+msgid "Objectid"
+msgstr ""
+
+#: View/Statements/view.ctp:49
+msgid "Object ObjectType"
+msgstr ""
+
+#: View/Statements/view.ctp:54
+msgid "Object Definition Type"
+msgstr ""
+
+#: View/Statements/view.ctp:59
+msgid "Object Definition Name"
+msgstr ""
+
+#: View/Statements/view.ctp:64
+msgid "Object Definition Description"
+msgstr ""
+
+#: View/Statements/view.ctp:69
+msgid "Stored"
+msgstr ""
+
+#: View/Statements/view.ctp:79
+msgid "Result Score Raw"
+msgstr ""
+
+#: View/Statements/view.ctp:84
+msgid "Result Score Scaled"
+msgstr ""
+
+#: View/Statements/view.ctp:89
+msgid "Result Score Min"
+msgstr ""
+
+#: View/Statements/view.ctp:94
+msgid "Result Score Max"
+msgstr ""
+
+#: View/Statements/view.ctp:99
+msgid "Result Completion"
+msgstr ""
+
+#: View/Statements/view.ctp:104
+msgid "Result Success"
+msgstr ""
+
+#: View/Statements/view.ctp:109
+msgid "Result Duration"
+msgstr ""
+
+#: View/Statements/view.ctp:114
+msgid "Parent Ids"
+msgstr ""
+
+#: View/Statements/view.ctp:119
+msgid "Grouping Ids"
+msgstr ""
+
+#: View/Statements/view.ctp:124
+msgid "Statement"
+msgstr ""
+
+#: View/Statements/view.ctp:134
+msgid "Edit Gb Statement"
+msgstr ""
+
+#: View/Statements/view.ctp:135
+msgid "Delete Gb Statement"
+msgstr ""
+
+#: View/Statements/view.ctp:137
+msgid "New Gb Statement"
+msgstr ""
+
+#: View/Triggers/add.ctp:5
+msgid "Add Trigger"
+msgstr ""
+
+#: View/Triggers/add.ctp:27
+#: View/Triggers/edit.ctp:27
+msgid "Enter Trigger Name"
+msgstr ""
+
+#: View/Triggers/add.ctp:47
+#: View/Triggers/edit.ctp:47
+msgid "URL"
+msgstr ""
+
+#: View/Triggers/add.ctp:53
+#: View/Triggers/edit.ctp:53
+msgid "Enter URL"
+msgstr ""
+
+#: View/Triggers/add.ctp:56
+#: View/Triggers/edit.ctp:56
+msgid "URL of the website or script where the statement is sent on trigger."
+msgstr ""
+
+#: View/Triggers/add.ctp:61
+#: View/Triggers/edit.ctp:61
+msgid "Trigger Criterion"
+msgstr ""
+
+#: View/Triggers/edit.ctp:5
+msgid "Edit Trigger"
+msgstr ""
+
+#: View/Triggers/edit.ctp:76
+msgid "Authority"
+msgstr ""
+
+#: View/Triggers/edit.ctp:90
+msgid "Status"
+msgstr ""
+
+#: View/Users/add.ctp:5
+msgid "Add User"
+msgstr ""
+
+#: View/Users/add.ctp:27;33
+#: View/Users/edit.ctp:27;33
+#: View/Users/login.ctp:14
+msgid "Email Address"
+msgstr ""
+
+#: View/Users/add.ctp:49
+#: View/Users/edit.ctp:49
+msgid "Role"
+msgstr ""
+
+#: View/Users/edit.ctp:5
+msgid "Edit User"
+msgstr ""
+
+#: View/Users/edit.ctp:64
+msgid "Permissions"
+msgstr ""
+
+#: View/Users/edit.ctp:123
+msgid "AuthToken List"
+msgstr ""
+
+#: View/Users/edit.ctp:137
+msgid "API User"
+msgstr ""
+
+#: View/Users/edit.ctp:138
+msgid "API Password"
+msgstr ""
+
+#: View/Users/edit.ctp:139
+msgid "Action"
+msgstr ""
+
+#: View/Users/edit.ctp:151
+msgid "Select"
+msgstr ""
+
+#: View/Users/edit.ctp:166
+msgid "Authentication Details"
+msgstr ""
+
+#: View/Users/edit.ctp:175
+msgid "These are the authentication details you would need to configure in"
+msgstr ""
+
+#: View/Users/edit.ctp:175
+msgid "GrassBlade xAPI Companion</a> or any other xAPI LMS/Content."
+msgstr ""
+
+#: View/Users/edit.ctp:182
+msgid "API User:"
+msgstr ""
+
+#: View/Users/edit.ctp:182
+msgid "Any API User authentication information from above table."
+msgstr ""
+
+#: View/Users/edit.ctp:185
+msgid "API Password:"
+msgstr ""
+
+#: View/Users/edit.ctp:185
+msgid "Corresponding API Password from above table."
+msgstr ""
+
+#: View/Users/index.ctp:10
+msgid "Users List"
+msgstr ""
+
+#: View/Users/login.ctp:3
+msgid "Login to your account"
+msgstr ""
+
+#: View/Users/login.ctp:7
+msgid "Enter any email and password."
+msgstr ""
+
+#: Model/Config.php:validation for field key;validation for field value
+#: Model/Group.php:validation for field name
+#: Model/Trigger.php:validation for field name
+#: Model/User.php:validation for field name
+msgid "notBlank"
+msgstr ""
+
+#: Model/User.php:validation for field email
+msgid "email"
+msgstr ""
+

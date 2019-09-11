@@ -1,0 +1,27 @@
+Changes
+
+1. File: lib/Cake/bootstrap.php: near line: 165
+
+	if (env('HTTPS')) {
+to
+	if (env('HTTPS') || env('HTTP_X_FORWARDED_PROTO') == "https") { //Changed by Pankaj
+
+
+2. File: lib/Cake/View/Healper.php : near line: 356
+added line
+                $path = modified("assetPath", $path, $options); //GRASSBLADE for CDN
+
+Context:
+	public function assetUrl($path, $options = array()) {
+		if (is_array($path)) {
+			return $this->url($path, !empty($options['fullBase']));
+		}
+		if (strpos($path, '://') !== false) {
+			return $path;
+		}
+
++        $path = modified("assetPath", $path, $options); //GRASSBLADE for CDN
+
+		if (!array_key_exists('plugin', $options) || $options['plugin'] !== false) {
+			list($plugin, $path) = $this->_View->pluginSplit($path, false);
+		}

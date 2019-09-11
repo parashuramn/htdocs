@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<timeline>
+<title>Pacific Theater</title>
+<closeTxt>Close</closeTxt>
+<ordermethod>date</ordermethod>
+<startday>1</startday>
+<startmonth>1</startmonth>
+<startyear>1940</startyear>
+<endday>31</endday>
+<endmonth>12</endmonth>
+<endyear>1946</endyear>
+<intervals>1</intervals>
+<event value="1">
+	<date>12/0/1941</date>
+	<end></end>
+	<title>Pearl+Harbor</title>
+	<image>lessonimages/timeline17_0.jpg</image>
+	<iwidth>240</iwidth>
+	<content>Japanese+bomb+Pearl+Harbor.</content>
+</event>
+<event value="2">
+	<date>6/0/1942</date>
+	<end></end>
+	<title>Battle+of+Midway</title>
+	<image>lessonimages/timeline17_1.jpg</image>
+	<iwidth>240</iwidth>
+	<content>Americans+defeat+the+Japanese+near+Midway+Island%2C+turning+the+tide+of+war+and+sinking+four+Japanese+aircraft+carriers.</content>
+</event>
+<event value="3">
+	<date>10/0/1944</date>
+	<end></end>
+	<title>Battle+of+Leyte+Gulf</title>
+	<image>lessonimages/timeline17_2.jpg</image>
+	<iwidth>240</iwidth>
+	<content>American+troops+land+in+the+Phillippines+and+the+American+Navy+defeats+the+Japanese+Navy+at+the+Battle+of+Leyte+Gulf%2C+crippling+Japanese+sea+power.</content>
+</event>
+<event value="4">
+	<date>2/0/1945</date>
+	<end>8/0/1945</end>
+	<title>Bombing+of+Tokyo</title>
+	<image>lessonimages/timeline17_4.jpg</image>
+	<iwidth>240</iwidth>
+	<content>Tokyo+firebombed%2C+killing+tens+of+thousands%2C+and+naval+blockade+of+Japan+begins.+While+Hitler+dies+and+Germany+surrenders+%28thus+leaving+Japan+without+a+powerful+ally%29%2C+FDR+%28who+had+been+elected+President+for+four+consecutive+terms+since+1932%29+dies+in+April.+Harry+S.+Truman+takes+over+as+President.</content>
+</event>
+<event value="5">
+	<date>2/0/1945</date>
+	<end>4/0/1945</end>
+	<title>Iwo+Jima+and+Okinawa</title>
+	<content>Americans+win+costly+victories+at+Iwo+Jima+and+Okinawa%2C+in+spite+of+effective+kamikaze+bombers.</content>
+</event>
+<event value="6">
+	<date>8/0/1945</date>
+	<end></end>
+	<title>A-Bomb</title>
+	<image>lessonimages/timeline17_5.jpg</image>
+	<iwidth>240</iwidth>
+	<content>Americans+drop+two+atomic+bombs+on+Hiroshima+and+Nagasaki.+Japan+surrenders+days+later.</content>
+</event>
+</timeline>

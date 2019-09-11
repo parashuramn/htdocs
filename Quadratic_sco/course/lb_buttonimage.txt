@@ -1,0 +1,25 @@
+! SoftChalk LessonBuilder Image Data File (C)2008
+! ================= DO NOT EDIT =================
+
+ButtonImage:
+fileName=selfcheck_custom
+width=145
+height=50
+margin=2
+diameter=0
+bgColor=ffffff
+fgColor=FFFFFF
+textColor=2C71FF
+imageColor=2C71FF
+fontName=Arial
+fontStyle=bold
+fontSize=15
+standardArrow=true
+actTitle=false
+closeBox=false
+direction=0
+mediaIcon=false
+mediaType=0
+text=Self Check
+textCatagory=14
+

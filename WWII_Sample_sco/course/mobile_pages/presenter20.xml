@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<slideShowActivity>
+    <set id="0">
+        <title encoding="true"><![CDATA[Adolf+Hitler]]></title>
+        <image><![CDATA[<img src="lessonimages/presenterImage20_0.png" width="193" height="256"></img>]]></image>
+        <content encoding="true"><![CDATA[Nazi+dictator+of+Germany+%281933-45%29%2C+planned+and+started+World+War+2%2C+committed+suicide+at+the+end+of+the+war]]></content>
+    </set>
+    <set id="1">
+        <title encoding="true"><![CDATA[General+Hideki+Tojo]]></title>
+        <image><![CDATA[<img src="lessonimages/presenterImage20_1.png" width="200" height="256"></img>]]></image>
+        <content encoding="true"><![CDATA[Prime+minister+of+Japan+%281941+-+1944%29.]]></content>
+    </set>
+    <set id="2">
+        <title encoding="true"><![CDATA[Benito+Mussolini]]></title>
+        <image><![CDATA[<img src="lessonimages/presenterImage20_2.png" width="200" height="242"></img>]]></image>
+        <content encoding="true"><![CDATA[Prime+minister+of+Italy+%281922+-+1943%29.]]></content>
+    </set>
+    <set id="3">
+        <title encoding="true"><![CDATA[Winston+Churchill]]></title>
+        <image><![CDATA[<img src="lessonimages/presenterImage20_3.png" width="211" height="256"></img>]]></image>
+        <content encoding="true"><![CDATA[British+prime+minister+%281940+-+1945+and+1951+-+1955%29.]]></content>
+    </set>
+    <set id="4">
+        <title encoding="true"><![CDATA[Joseph+Stalin]]></title>
+        <image><![CDATA[<img src="lessonimages/presenterImage20_4.png" width="176" height="256"></img>]]></image>
+        <content encoding="true"><![CDATA[Communist+dictator+of+Russia+%281928-1953%29.]]></content>
+    </set>
+    <set id="5">
+        <title encoding="true"><![CDATA[Franklin+Delano+Roosevelt]]></title>
+        <image><![CDATA[<img src="lessonimages/presenterImage20_5.png" width="194" height="256"></img>]]></image>
+        <content encoding="true"><![CDATA[President+of+the+United+States+of+America+%281933-1945%29.]]></content>
+    </set>
+</slideShowActivity>

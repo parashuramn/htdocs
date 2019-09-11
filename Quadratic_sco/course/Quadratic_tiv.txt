@@ -1,0 +1,33 @@
+! SoftChalk LessonBuilder TIV File (C)2003-2008
+! ================ DO NOT EDIT ================
+
+act_item=1
+
+act_num=1
+act_type=8
+items=5
+colorChoice=_custom
+showList=false
+showFlashCardTerm=true
+showFlashCardDef=false
+useFlashBigText=false
+hideActivityBackground=false
+instructions=Click the card deck to view a card. Drag the card from the bottom to the correct category. Using the discriminant to determine the number of real solutions
+minimumDuration=5
+mathML_1=<math><mrow><mi mathsize='14pt' fontfamily='Arial'>y</mi><mo mathsize='14pt' fontfamily='Arial'>=</mo><mspace linebreak='newline'/><msup><mrow><mi mathsize='14pt' fontfamily='Arial'>x</mi></mrow><mrow><mn mathsize='14pt' fontfamily='Arial'>2</mn></mrow></msup><mo mathsize='14pt' fontfamily='Arial'>+</mo><mn mathsize='14pt' fontfamily='Arial'>4</mn><mi mathsize='14pt' fontfamily='Arial'>x</mi><mo mathsize='14pt' fontfamily='Arial'>+</mo><mn mathsize='14pt' fontfamily='Arial'>1</mn></mrow></math>
+mathML_2=<math><mrow><mi mathsize='14pt' fontfamily='Arial'>y</mi><mo mathsize='14pt' fontfamily='Arial'>=</mo><mspace linebreak='newline'/><msup><mrow><mi mathsize='14pt' fontfamily='Arial'>x</mi></mrow><mrow><mn mathsize='14pt' fontfamily='Arial'>2</mn></mrow></msup><mo mathsize='14pt' fontfamily='Arial'>+</mo><mn mathsize='14pt' fontfamily='Arial'>6</mn><mi mathsize='14pt' fontfamily='Arial'>x</mi><mo mathsize='14pt' fontfamily='Arial'>+</mo><mn mathsize='14pt' fontfamily='Arial'>9</mn></mrow></math>
+mathML_3=<math><mrow><mi mathsize='14pt' fontfamily='Arial'>y</mi><mo mathsize='14pt' fontfamily='Arial'>=</mo><mspace linebreak='newline'/><msup><mrow><mi mathsize='14pt' fontfamily='Arial'>x</mi></mrow><mrow><mn mathsize='14pt' fontfamily='Arial'>2</mn></mrow></msup><mo mathsize='14pt' fontfamily='Arial'>&minus;</mo><mn mathsize='14pt' fontfamily='Arial'>4</mn><mi mathsize='14pt' fontfamily='Arial'>x</mi><mo mathsize='14pt' fontfamily='Arial'>+</mo><mn mathsize='14pt' fontfamily='Arial'>3</mn></mrow></math>
+mathML_4=<math><mrow><mi mathsize='14pt' fontfamily='Arial'>y</mi><mo mathsize='14pt' fontfamily='Arial'>=</mo><mspace linebreak='newline'/><msup><mrow><mi mathsize='14pt' fontfamily='Arial'>x</mi></mrow><mrow><mn mathsize='14pt' fontfamily='Arial'>2</mn></mrow></msup><mo mathsize='14pt' fontfamily='Arial'>&minus;</mo><mn mathsize='14pt' fontfamily='Arial'>2</mn><mi mathsize='14pt' fontfamily='Arial'>x</mi><mo mathsize='14pt' fontfamily='Arial'>&minus;</mo><mn mathsize='14pt' fontfamily='Arial'>2</mn></mrow></math>
+mathML_5=<math><mrow><mi mathsize='14pt' fontfamily='Arial'>y</mi><mo mathsize='14pt' fontfamily='Arial'>=</mo><mspace linebreak='newline'/><msup><mrow><mi mathsize='14pt' fontfamily='Arial'>x</mi></mrow><mrow><mn mathsize='14pt' fontfamily='Arial'>2</mn></mrow></msup><mo mathsize='14pt' fontfamily='Arial'>+</mo><mn mathsize='14pt' fontfamily='Arial'>12</mn><mi mathsize='14pt' fontfamily='Arial'>x</mi><mo mathsize='14pt' fontfamily='Arial'>+</mo><mn mathsize='14pt' fontfamily='Arial'>40</mn></mrow></math>
+inline=true
+catagory_1=Two Roots
+catagory_2=One Root
+catagory_3=No Roots
+points=5
+showRestart=true
+showTitle=false
+sqrsize=18
+adaDescription=
+hotspotWidth=450
+hotspotHeight=500
+

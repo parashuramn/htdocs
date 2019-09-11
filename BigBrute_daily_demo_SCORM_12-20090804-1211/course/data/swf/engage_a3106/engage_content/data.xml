@@ -1,0 +1,20 @@
+<Interaction Type="FAQ" ContentFolder="proj_content" Title="Help" Numbering="0" animation="fade" contentfont="Franklin Gothic Book" jpegquality="100" autoplay="false" autoplayduration="5" headingfont="Franklin Gothic Demi" navfont="Franklin Gothic Demi" soundeffects="false" volumebutton="false" audioquality="custom" audiocustombitrate="br24Kbps" audiocustomfrequency="fq22KHz" audiocustomchannel="ccMono" navbuttons="false" forceorder="false" detectflashver="true" version="2.0.809.1113" borderstyle="round_inset">
+  <resume id="63d70315-5199-444e-93fe-41bfb2b259fa" enabled="false" />
+  <Search enabled="false" searchtext="Search" resulttext="found for" />
+  <steps>
+    <Step id="3f51d3c4-4729-4bca-aebe-00053e63a8f9" name="Basic Navigation" title="" number="" html=" &lt;p align='left'&gt;&lt;font face='Franklin Gothic Book' size='15' color=''&gt;&lt;/font&gt;&lt;/p&gt;&lt;p align='left'&gt;&lt;font face='Franklin Gothic Book' size='15' color=''&gt;Use the navigation tools at the bottom of the screen.&lt;/font&gt;&lt;/p&gt;">
+      <image width="431" height="180" zoomheight="180" playbar="false" autoplay="false" zoomwidth="431" zoommode="Embedded" allowzoom="false" align="top" duration="33" framerate="30" name="swf0.swf" zoomimage="swf0.swf" />
+    </Step>
+    <Step id="1893aeef-81ab-4e1f-be19-e96f3d48e8bd" name="Audio" title="" number="" html=" &lt;p align='left'&gt;&lt;font face='Franklin Gothic Book' size='15' color=''&gt;&lt;/font&gt;&lt;/p&gt;&lt;p align='left'&gt;&lt;font face='Franklin Gothic Book' size='15' color=''&gt;This training has associated audio, so be sure to turn on your speakers. You can adjust the volume by clicking on the audio icon at the bottom of your screen.&lt;/font&gt;&lt;/p&gt;">
+      <image width="242" height="180" zoomheight="180" playbar="false" autoplay="false" zoomwidth="242" zoommode="Embedded" allowzoom="false" align="topright" duration="33" framerate="30" name="swf1.swf" zoomimage="swf1.swf" />
+    </Step>
+    <Step id="f9ea5cb5-8d94-48c1-a81a-0ed2f22693a7" name="Notes" title="" number="" html=" &lt;p align='left'&gt;&lt;font face='Franklin Gothic Book' size='15' color=''&gt;&lt;/font&gt;&lt;/p&gt;&lt;p align='left'&gt;&lt;font face='Franklin Gothic Book' size='15' color=''&gt;Select the Notes button at the bottom right of your screen to view the narration for each slide.&lt;/font&gt;&lt;/p&gt;">
+      <image width="242" height="180" zoomheight="180" playbar="false" autoplay="false" zoomwidth="242" zoommode="Embedded" allowzoom="false" align="topright" duration="33" framerate="30" name="swf6.swf" zoomimage="swf6.swf" />
+    </Step>
+    <Step id="d0ad7b02-f30d-4056-a000-256b3d502eeb" name="About Big Brute Storage" title="" number="" html=" &lt;p align='left'&gt;&lt;font face='Franklin Gothic Book' size='15' color=''&gt;&lt;/font&gt;&lt;/p&gt;&lt;p align='left'&gt;&lt;font face='Franklin Gothic Demi' size='15' color=''&gt;Big Brute Storage&lt;/font&gt;&lt;font face='Franklin Gothic Book' size='15' color=''&gt; is a completely fictitious company created from the collective imagination of the creative team at &lt;/font&gt;&lt;font face='Franklin Gothic Book' size='15' color='#ff8000'&gt;&lt;u&gt;&lt;a target='_blank' href='http://www.ptrain.com'&gt;Prometheus Training Corporation&lt;/a&gt;&lt;/u&gt;&lt;/font&gt;&lt;font face='Franklin Gothic Book' size='15' color='#000000'&gt; for purposes of the demo.&lt;br&gt;&lt;/br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p align='left'&gt;&lt;font face='Franklin Gothic Book' size='15' color='#000000'&gt;But they do have a really cool logo.&lt;/font&gt;&lt;/p&gt;">
+      <image width="242" height="180" zoomheight="180" playbar="false" autoplay="false" zoomwidth="242" zoommode="Embedded" allowzoom="false" align="topright" duration="33" framerate="30" name="swf4.swf" zoomimage="swf4.swf" />
+    </Step>
+  </steps>
+  <nextslide enabled="False" text="" show="" />
+  <starttip show="false" text="Click next to continue" />
+</Interaction>

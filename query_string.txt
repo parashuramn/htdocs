@@ -1,0 +1,8 @@
+http://nuc.gblrs.com/wordpress/wp-content/uploads/grassblade/90-90/index_scorm.html?
+actor=%7B%22mbox%22%3A%22mailto%3Adeepak%40nextsoftwaresolutions.com%22%2C%22name%22%3A%22nsstester%22%2C%22objectType%22%3A%22Agent%22%7D&auth=Basic%20MjktYTg0Y2FkNzk4ZDU3NzdiOjU4YzI2MmE3ZjNlYzA0NDk1NGI0NzQzMGM%3D&endpoint=https%3A%2F%2Ftest.gblrs.com%2FxAPI%2F&registration=17e491fc-c3ae-4705-b731-7aa5a589b1df&activity_id=http%3A%2F%2Fnuc.gblrs.com%2Fwordpress%2Fgb_xapi_content%2F90
+
+"
+Sir it is required to check FMLA_Sample - Articulate Storyline
+
+captivate===
+http://nuc.gblrs.com/wordpress/2019/08/30/demo-captivate-scorm-1/?actor=%7B%22mbox%22%3A%22mailto%3Adeepak%40nextsoftwaresolutions.com%22%2C%22name%22%3A%22nsstester%22%2C%22objectType%22%3A%22Agent%22%7D&auth=Basic%20MjktYTg0Y2FkNzk4ZDU3NzdiOjU4YzI2MmE3ZjNlYzA0NDk1NGI0NzQzMGM%3D&endpoint=https%3A%2F%2Ftest.gblrs.com%2FxAPI%2F&registration=17e491fc-c3ae-4705-b731-7aa5a589b1df&activity_id=http%3A%2F%2Fnuc.gblrs.com%2Fwordpress%2Fgb_xapi_content%2F90

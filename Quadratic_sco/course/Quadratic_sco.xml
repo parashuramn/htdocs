@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1"
+xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd">
+
+	<general>
+		<title>
+			<langstring>Quadratic</langstring>
+		</title>
+		<catalogentry>
+			<catalog>SoftChalk Lesson</catalog>
+			<entry>
+				<langstring>0001</langstring>
+			</entry>
+		</catalogentry>
+		<language>en</language>
+		<description>
+			<langstring>Lesson created by SoftChalk</langstring>
+		</description>
+		<keyword>
+			<langstring>The Discriminant</langstring>
+		</keyword>
+		<keyword>
+			<langstring>Discriminant Examples</langstring>
+		</keyword>
+		<keyword>
+			<langstring>Quadratics</langstring>
+		</keyword>
+		<keyword>
+			<langstring>Quadratics</langstring>
+		</keyword>
+		<keyword>
+			<langstring>Quadratics</langstring>
+		</keyword>
+		<keyword>
+			<langstring>Quadratics</langstring>
+		</keyword>
+		<keyword>
+			<langstring>Quadratics</langstring>
+		</keyword>
+		<keyword>
+			<langstring>Quadratics</langstring>
+		</keyword>
+		<keyword>
+			<langstring>Quadratics</langstring>
+		</keyword>
+		<keyword>
+			<langstring>Quadratics</langstring>
+		</keyword>
+	</general>
+
+	<lifecycle>
+		<version>
+			<langstring>1</langstring>
+		</version>
+		<status>
+			<source>
+				<langstring xml:lang="x-none">LOMv1.0</langstring>
+			</source>
+			<value>
+				<langstring xml:lang="x-none">Final</langstring>
+			</value>
+		</status>
+	</lifecycle>
+	<metametadata>
+		<metadatascheme>ADL SCORM(TM) 1.2</metadatascheme>
+	</metametadata>
+	<technical>
+		<format>text/html</format>
+		<location>index.html</location>
+	</technical>
+	<rights>
+		<cost>
+			<source>
+				<langstring xml:lang="x-none">LOMv1.0</langstring>
+			</source>
+			<value>
+				<langstring xml:lang="x-none">no</langstring>
+			</value>
+		</cost>
+		<copyrightandotherrestrictions>
+			<source>
+				<langstring xml:lang="x-none">LOMv1.0</langstring>
+			</source>
+			<value>
+				<langstring xml:lang="x-none">yes</langstring>
+			</value>
+		</copyrightandotherrestrictions>
+	</rights>
+	<classification>
+		<purpose>
+			<source>
+				<langstring xml:lang="x-none">LOMv1.0</langstring>
+			</source>
+			<value>
+				<langstring xml:lang="x-none">Educational Objective</langstring>
+			</value>
+		</purpose>
+		<description>
+			<langstring>Lesson module</langstring>
+		</description>
+		<keyword>
+			<langstring>Created with SoftChalk LessonBuilder</langstring>
+		</keyword>
+	</classification>
+</lom>

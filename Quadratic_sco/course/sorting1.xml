@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cardset>
+ <color>dfeaff</color>
+ <correctsound>correct.mp3</correctsound>
+<largetext>false</largetext>
+ <wrongsound>wrong.mp3</wrongsound>
+ <value>5</value>
+ <valueText>Value:</valueText>
+ <scoreText>Score</scoreText>
+ <resetText>Re-start</resetText>
+ <cat1>Two+Roots</cat1>
+ <cat2>One+Root</cat2>
+ <cat3>No+Roots</cat3>
+ <card value='1'>
+  <cat>1</cat>
+  <image>lessonimages/sorting1_1.gif</image>
+  <title></title>
+  <title2></title2>
+  <text></text>
+ </card>
+ <card value='2'>
+  <cat>2</cat>
+  <image>lessonimages/sorting1_2.gif</image>
+  <title></title>
+  <title2></title2>
+  <text></text>
+ </card>
+ <card value='3'>
+  <cat>1</cat>
+  <image>lessonimages/sorting1_3.gif</image>
+  <title></title>
+  <title2></title2>
+  <text></text>
+ </card>
+ <card value='4'>
+  <cat>1</cat>
+  <image>lessonimages/sorting1_4.gif</image>
+  <title></title>
+  <title2></title2>
+  <text></text>
+ </card>
+ <card value='5'>
+  <cat>3</cat>
+  <image>lessonimages/sorting1_5.gif</image>
+  <title></title>
+  <title2></title2>
+  <text></text>
+ </card>
+</cardset>

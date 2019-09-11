@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" onmouseup="{ if(window.parent.document.onmouseup) window.parent.document.onmouseup(arguments[0]);}" width="36" viewBox="0 0 36 36" id="S_Download_18_N_2x" height="36" data-name="S_Download_18_N@2x"><defs><style>
+      .fill {
+        fill: #707070;
+      }
+
+      
+    </style></defs><path data-cppathid="10000" d="M33,24H31a1,1,0,0,0-1,1v5H6V25a1,1,0,0,0-1-1H3a1,1,0,0,0-1,1v8a1,1,0,0,0,1,1H33a1,1,0,0,0,1-1V25A1,1,0,0,0,33,24Z" class="fill"/><path data-cppathid="10001" d="M17.649,26.856a.5.5,0,0,0,.7,0L25.8,19.331a.782.782,0,0,0,.2-.526.8.8,0,0,0-.8-.8H20V3a1,1,0,0,0-1-1H17a1,1,0,0,0-1,1V18H10.8a.8.8,0,0,0-.8.8.782.782,0,0,0,.2.526Z" class="fill"/></svg>

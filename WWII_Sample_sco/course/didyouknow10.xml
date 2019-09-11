@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<DidYouKnowActivity>
+    <BackgroundColor>#FCD3C4</BackgroundColor>
+    <RevealLabel>Show+Answer</RevealLabel>
+    <Question color="#FF0000">
+        <PrimaryIcon>
+            <Image>%3Cimg+src%3D%22lessonimages%2Fdidyouknow10_icon_bluecircularquestionmark.png%22+width%3D%22180%22+height%3D%22180%22%3E</Image>
+            <MathML/>
+        </PrimaryIcon>
+        <SecondaryIcon>
+            <Image/>
+            <MathML/>
+        </SecondaryIcon>
+        <Question>%3Cp%3EWas+WWII+one+big+war+or+two+separate+wars%3F%3C%2Fp%3E</Question>
+        <Answer>%3Cp%3EWWII+was+in+a+real+sense+two+separate+wars+going+on+at+the+same+time.+The+European+conflict+saw+the+Soviet+Union%2C+Great+Britain%2C+France%2C+the+United+States%2C+and+some+of+the+smaller+countries+fighting+against+Nazi+Germany+and+Fascist+Italy.+The+Pacific+war+saw+the+United+States+and+Great+Britain+%28and+her+Indian+and+Australian+allies%29+fighting+against+the+Japanese+and+Chinese.+The+Soviet+Union+was+never+involved+in+the+Pacific+war%2C+and+Japan+was+not+at+all+involved+in+European+war.+The+two+wars+started+separately+and+ended+separately.%3C%2Fp%3E</Answer>
+    </Question>
+</DidYouKnowActivity>

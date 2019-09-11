@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest identifier="Vj0XXLwpj0a6v" xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:lom="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+<metadata>
+<schema>ADL SCORM</schema>
+<schemaversion>1.2</schemaversion>
+<lom:lom>
+<lom:general>
+<lom:title>
+<lom:langstring>iSpring Demo Course (SCORM 1.2)</lom:langstring>
+</lom:title>
+</lom:general>
+<lom:educational>
+<lom:typicallearningtime>
+<lom:datetime>01:00:00</lom:datetime>
+</lom:typicallearningtime>
+</lom:educational>
+</lom:lom>
+</metadata>
+<organizations default="ispring_demo_course_(scorm_1.2)_organization">
+<organization identifier="ispring_demo_course_(scorm_1.2)_organization">
+<title>iSpring Demo Course (SCORM 1.2)</title>
+<item identifier="ispringdemo_scorm_1_2" identifierref="resource">
+<title>iSpring Demo Course (SCORM 1.2)</title>
+</item>
+</organization>
+</organizations>
+<resources>
+<resource identifier="resource" type="webcontent" adlcp:scormtype="sco" href="res/index.html">
+<file href="res/index.html"/>
+<file href="res/lms.js"/>
+<file href="res/data/thmb1.jpg"/>
+<file href="res/data/slide1.js"/>
+<file href="res/data/slide1.css"/>
+<file href="res/data/thmb2.jpg"/>
+<file href="res/data/slide2.js"/>
+<file href="res/data/slide2.css"/>
+<file href="res/data/thmb3.png"/>
+<file href="res/data/slide3.js"/>
+<file href="res/data/slide3.css"/>
+<file href="res/data/thmb4.jpg"/>
+<file href="res/data/quiz1.js"/>
+<file href="res/data/quiz1/fonts/fnt0.woff"/>
+<file href="res/data/quiz1/fonts/fnt1.woff"/>
+<file href="res/data/quiz1/fonts/fnt2.woff"/>
+<file href="res/data/quiz1/fonts/fnt3.woff"/>
+<file href="res/data/quiz1/fonts/fnt4.woff"/>
+<file href="res/data/quiz1/fonts/fnt5.woff"/>
+<file href="res/data/quiz1/fonts/fnt6.woff"/>
+<file href="res/data/quiz1/images/img-1569-3f78-d516-28f9.jpg"/>
+<file href="res/data/quiz1/images/img-245d-1353-2b2e-88c4.jpg"/>
+<file href="res/data/quiz1/images/img-31ec56832e6db33d5bed0eb1b0bd7cd28d9fa44c.png"/>
+<file href="res/data/quiz1/images/img-62bffa74653dc94bddf4404db73b32e05793d769.jpg"/>
+<file href="res/data/quiz1/images/img-762e0878ce7a35897630c79035f3eef5dc52ebff.png"/>
+<file href="res/data/quiz1/images/img-b822dfb216deb4bc1dd66052f19a13cbfc6191d0.png"/>
+<file href="res/data/quiz1/images/img-c1ab-b3d9-4467-82b4.png"/>
+<file href="res/data/quiz1/images/quiz_bg_0.png"/>
+<file href="res/data/quizplayer.js"/>
+<file href="res/index.html"/>
+<file href="res/data/player.js"/>
+<file href="res/data/eraser.cur"/>
+<file href="res/data/highlighter.cur"/>
+<file href="res/data/marker.cur"/>
+<file href="res/data/lock.cur"/>
+<file href="res/data/browsersupport.js"/>
+<file href="res/data/apple-touch-icon.png"/>
+<file href="res/data/favicon.ico"/>
+<file href="res/data/fnt0.woff"/>
+<file href="res/data/fnt1.woff"/>
+<file href="res/data/fnt10.woff"/>
+<file href="res/data/fnt11.woff"/>
+<file href="res/data/fnt12.woff"/>
+<file href="res/data/fnt13.woff"/>
+<file href="res/data/fnt2.woff"/>
+<file href="res/data/fnt3.woff"/>
+<file href="res/data/fnt4.woff"/>
+<file href="res/data/fnt5.woff"/>
+<file href="res/data/fnt6.woff"/>
+<file href="res/data/fnt7.woff"/>
+<file href="res/data/fnt8.woff"/>
+<file href="res/data/fnt9.woff"/>
+<file href="res/data/html5-unsupported.html"/>
+<file href="res/data/html5.png"/>
+<file href="res/data/img0.jpg"/>
+<file href="res/data/img1.png"/>
+<file href="res/data/img2.png"/>
+<file href="res/data/img3.png"/>
+<file href="res/data/img4.jpg"/>
+<file href="res/data/img5.png"/>
+<file href="res/data/img6.png"/>
+<file href="res/data/img7.png"/>
+<file href="res/data/img8.png"/>
+<file href="res/data/ismplayer/preview.png"/>
+<file href="res/data/ismplayer/play.svg"/>
+<file href="res/data/ismplayer/style.css"/>
+<file href="res/data/ismplayer/style_mini.css"/>
+<file href="res/ismplayer.html"/>
+<file href="res/data/ismplayer/app_store2x.png"/>
+<file href="res/metainfo.xml"/>
+</resource>
+</resources>
+</manifest>
