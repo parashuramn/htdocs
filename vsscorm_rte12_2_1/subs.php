@@ -385,9 +385,10 @@ foreach ($organizationsList as $organizationsListRow) {
       $identifierref = $itemsListRow->getAttribute('identifierref');
       $titleTag = $itemsListRow->getElementsByTagName('title');
       $title = $titleTag->item(0)->nodeValue;
-      $masteryscoreTag = $itemsListRow->getElementsByTagNameNS($adlcp,'masteryscore');
+	  $masteryscoreTag = $itemsListRow->getElementsByTagNameNS($adlcp,'masteryscore');
+	  print_r($masteryscoreTag);
       $launchdataTag = $itemsListRow->getElementsByTagNameNS($adlcp,'datafromlms');
-
+      
 // table row
       $ORGdata[$identifier]['identifier'] = $identifier;
       $ORGdata[$identifier]['identifierref'] = $identifierref;
@@ -397,8 +398,145 @@ foreach ($organizationsList as $organizationsListRow) {
 }
 return($ORGdata);
 }
+function all_tag($xml){
+	$i=0; $name = "";
+	foreach ($xml as $k){
+		$tag = $k->getName();
+		$tag_value = $xml->$tag;
+		if ($name == $tag){ $i++;    }
+				$name = $tag;    
+			echo $tag .' '.$tag_value[$i].'<br />';
+		// recursive
+		   all_tag($xml->$tag->children());
+	}
+}
+function getScormVersion($manifestfile){
+				// load the imsmanifest.xml file
+				$dom = new DomDocument;
+				$dom->preserveWhiteSpace = FALSE;
+				$dom->load($manifestfile);
+				// //print_r($dom->getElementsByTagName('schemaversion'));
+				// // adlcp namespace
+				 $manifest = $dom->getElementsByTagName('manifest');
+				 $adlcp = $manifest->item(0)->getAttribute('xmlns:adlcp');
+				// //print_r($manifest->item(0)->getElementsByTagName('metadata'));
+				// //print_r($manifest->baseURI);
+				// foreach($manifest as $manifestChild){
+				// 	print_r($manifestChild->getElementsByTagName('schema')->nodeValue);
+				// }
+				
+				//$adlcp = $manifest->item(0)->getAttribute('xmlns:adlcp');
+				// get the metadata element
+				//$metadata = $manifest->item(0)->getElementsByTagName('metadata');
+				//print_r($metadata);
+				foreach($manifest as $manifestEl){
+					$metadata = $manifestEl->getElementsByTagName( "metadata" );
+					if($metadata->item(0)->nodeValue !=''){
+					foreach($metadata as $metadataEl){
+						$schema = $metadataEl->getElementsByTagName( "schema" );
+						$schemaversion = $metadataEl->getElementsByTagName( "schemaversion" );
+						$adlcplocation = $metadataEl->getElementsByTagNameNS($adlcp, "location" );
+						$scorm_version['schema'] = $schema->item(0)->textContent;
+						$scorm_version['schemaversion'] = $schemaversion->item(0)->textContent;
+						$scorm_version['adlcplocation'] = $adlcplocation->item(0)->textContent;
+					}
+				}else{
+				// adlcp namespace
+				$adlcp = $manifest->item(0)->getAttribute('xmlns:adlcp');
+				// get the organizations element
+				$organizationsList = $manifestEl->getElementsByTagName('organizations');
+				foreach ($organizationsList as $organizationsListRow) {
+					$organizationList = $organizationsListRow->getElementsByTagName('organization');
+					foreach ($organizationList as $organizationListRow) {
+						$metadata = $organizationListRow->getElementsByTagName('metadata');
+						foreach($metadata as $metadataEl){
+							$schema = $metadataEl->getElementsByTagName( "schema" );
+							$schemaversion = $metadataEl->getElementsByTagName( "schemaversion" );
+							$adlcplocation = $metadataEl->getElementsByTagNameNS($adlcp,  "location" );
+							$scorm_version['schema'] = $schema->item(0)->textContent;
+							$scorm_version['schemaversion'] = $schemaversion->item(0)->textContent;
+							$scorm_version['adlcplocation'] = $adlcplocation->item(0)->textContent;
+						
+						}
+					}
+				}
+				}
+				}
+				
+				// //exit;
+				// $scorm_version = [];
+				// $dom = simplexml_load_file($manifestfile,null, LIBXML_NOCDATA);
+				// $json_string = json_encode($dom);    
+				// $result_array = json_decode($json_string, TRUE);
+				// foreach($result_array as $val_m){
+				// 	print_r($val_m);
+				// }
+				return $scorm_version;
 
+}
+function getMasteryScore($manifestfile){
+//load the imsmanifest.xml file
+$dom = new DomDocument;
+$dom->preserveWhiteSpace = FALSE;
+$dom->load($manifestfile);
+// adlcp namespace
+$manifest = $dom->getElementsByTagName('organizations');
+$adlcp = $manifest->item(0)->getAttribute('xmlns:adlcp');
+$master_score= 100;
+// foreach($manifest as $manifestEl){
+// 				// get the organizations element
+// 				$organizationsList = $manifestEl->getElementsByTagName('organizations');
+// 				foreach ($organizationsList as $organizationsListRow) {
+// 					$organizationList = $organizationsListRow->getElementsByTagName('organization');
+// 					foreach ($organizationList as $organizationListRow) {
+// 						$itemNode=$organizationListRow->getElementsByTagName('item');
+// 						print_r($itemNode->item(0)->nodeName); exit;
+// 						foreach($itemNode as $itemNodeEl){
+							
+// 							if($itemNodeEl->item(0)->nodeName =='adlcp:masteryscore'){
+// 								$master_score =$itemNodeEl->item(0)->textContent;
+// 							}
 
+							
+// 							// $master_scoreNode = $itemNodeEl->getElementsByTagName('adlcp:masteryscore');
+// 							// $master_score = $master_scoreNode->item(0)->textContent;
+// 						}
+						
+
+// 					}
+// 				}
+// 			}
+$xpath = new DOMXPath($dom);
+foreach ($xpath->evaluate('//*[count(*) = 0]') as $node) {
+	if($node->nodeName=='adlcp:masteryscore'){
+		$master_score =$node->nodeValue;
+	}
+  //var_dump($node->nodeName);
+}
+// $x = $manifest->documentElement;
+// foreach ($x->childNodes AS $item) {
+// 	$xy = $item->documentElement;
+//   foreach($xy->childNodes as $sub_item){
+// 	print $sub_item->nodeName . " = " . $sub_item->nodeValue . "<br>";
+//   }
+//   if($item->nodeName =='organizations '){
+// 	  foreach($item->childNodes as $organisations){
+// 		  echo $organisations->nodeName. "<br>";
+// 		  if($organisations->nodeName=='organization'){
+// 			foreach($organisations->childNodes as $organisation){
+// 				if($organisation->nodeName=='item'){
+// 					foreach($organisation->childNodes as $items){
+// 						print_r($items->nodeValue);
+// 					}
+// 				}
+// 		  }
+// 	  }
+//   }
+// }
+// }
+				return $master_score;
+
+}
 function getCourseTitle($manifestfile)
 {
 // load the imsmanifest.xml file
@@ -422,6 +560,7 @@ $organizationsList = $dom->getElementsByTagName('organizations');
 foreach ($organizationsList as $organizationsListRow) {
  $titleTag= $organizationsListRow->getElementsByTagName('title');
  $TITLE  = $titleTag->item(0)->nodeValue;
+ 
 }
 return  $TITLE; 
 }

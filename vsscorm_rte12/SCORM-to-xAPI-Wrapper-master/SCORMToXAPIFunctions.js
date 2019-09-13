@@ -92,16 +92,25 @@ xapi = function () {
             },
             context: {
                 contextActivities: {
+                    parent: [
+                        {
+                            id: ADL.XAPIWrapper.lrs.activity_id,
+                            objectType: "Activity",
+                            definition: {
+                                type: "http://adlnet.gov/expapi/activities/lesson"
+                            }
+                     }
+                  ],
                     grouping: [
                         {
-                            id: "",
+                            id: ADL.XAPIWrapper.lrs.activity_id,
                             objectType: "Activity",
                             definition: {
                                 type: "http://adlnet.gov/expapi/activities/attempt"
                             }
                   },
                         {
-                            id: config.courseId,
+                            id: ADL.XAPIWrapper.lrs.activity_id,
                             objectType: "Activity",
                             definition: {
                                 type: "http://adlnet.gov/expapi/activities/course"
@@ -147,7 +156,7 @@ xapi = function () {
                 contextActivities: {
                     parent: [
                         {
-                            id: config.activityId,
+                            id: ADL.XAPIWrapper.lrs.activity_id,
                             objectType: "Activity",
                             definition: {
                                 type: "http://adlnet.gov/expapi/activities/lesson"
@@ -156,19 +165,12 @@ xapi = function () {
                   ],
                     grouping: [
                         {
-                            id: "",
+                            id: ADL.XAPIWrapper.lrs.activity_id,
                             objectType: "Activity",
                             definition: {
                                 type: "http://adlnet.gov/expapi/activities/attempt"
                             }
-                     },
-                        {
-                            id: config.courseId,
-                            objectType: "Activity",
-                            definition: {
-                                type: "http://adlnet.gov/expapi/activities/course"
-                            }
-                     }
+                        }
                   ],
                     category: [
                         {
@@ -182,7 +184,14 @@ xapi = function () {
             }
         };
     }
-
+//     ,
+//     {
+//         id: ADL.XAPIWrapper.lrs.activity_id,
+//         objectType: "Activity",
+//         definition: {
+//             type: "http://adlnet.gov/expapi/activities/course"
+//         }
+//  }
     /*******************************************************************************
      **
      ** Voided base statement
@@ -652,7 +661,7 @@ xapi = function () {
                         setScore(value);
                         break;
                     case scormVersionConfig.completionElement:
-                        setComplete(value);
+                        //setComplete(value);
                         setLastComplete(value);
                         break;
                     case scormVersionConfig.successElement:
@@ -857,7 +866,7 @@ xapi = function () {
     var setLastComplete = function (value) {
         scormLessonLocation = retrieveDataValue(scormVersionConfig.locationElement);
         scormExit = retrieveDataValue(scormVersionConfig.exitElement);
-        if (value == "completed" && scormExit =='suspend' || value == "completed" && scormLessonLocation=="Result") {
+        if (value == "completed"  || value =='failed' || value == 'passed') {
             //sendSimpleStatement(ADL.verbs.terminated);
         var stmt = getBaseStatement();
         stmt.verb = ADL.verbs.completed;
@@ -1034,15 +1043,16 @@ var changeConfig = function(conf_key,conf_val){
         // attempt
         if (cmiEntryValue == "resume") {
             if (window.localStorage[config.activityId] == null) {
-                window.localStorage[config.activityId] = config.activityId + "?attemptId=" + generateUUID();
+                //window.localStorage[config.activityId] = config.activityId + "?attemptId=" + generateUUID();
+                window.localStorage[config.activityId] = config.activityId;
             }
 
             // send a resume statement
             //resumeAttempt();
 
         } else {
-            window.localStorage[config.activityId] = config.activityId + "?attemptId=" + generateUUID();
-
+            //window.localStorage[config.activityId] = config.activityId + "?attemptId=" + generateUUID();
+            window.localStorage[config.activityId] = config.activityId;
             // update the activity state with the new attempt IRI
             setActivityState();
         }
@@ -1100,6 +1110,7 @@ var changeConfig = function(conf_key,conf_val){
         saveDataValue: saveDataValue,
         setScore: setScore,
         setComplete: setComplete,
+        setLastComplete: setLastComplete,
         setSuccess: setSuccess,
         configureLRS: configureLRS,
         getConfig : getConfig,

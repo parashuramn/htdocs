@@ -189,7 +189,7 @@ function createRequest() {
 			return "%"+m2.toUpperCase();
 		});
 	}
-	function	sendDataToAjax(sendData){
+	function sendDataToAjax(sendData){
 			// create request object
 			var req = createRequest();
 
@@ -655,47 +655,68 @@ retrieveDataValue = API.LMSGetValue;
 // Path for SCORM bundles
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //'../iSpring Demo Course (SCORM 1.2)/res/index.html';
-$path = '../iSpring Demo Course (SCORM 1.2)/'; 
+$path_ar = ["../Demo Captivate Quiz SCORM 1.2/",
+"../iSpring Demo Course (SCORM 1.2)/res/",
+"../WWII_Sample_sco/course/",
+"../BigBrute_daily_demo_SCORM_12-20090804-1211/course/",
+"../FMLA_Sample/course/",
+"../Quadratic_sco/course/",
+"../PuzzleQuizSCORMExport/course/",
+"../Demo Captivate Slides Scorm 1.2/",
+"../iSpring Demo Course scorm 1.2 new/res/",
+"../iSpring SCORM 1.2 Quiz with Survey/res/"
+];
+ $path = $path_ar[$SCOInstanceID-1]; 
+//exit;
 // $path = '../Demo Captivate Quiz SCORM 1.2/';
 $i=0;	
 
+//print_r($dom->manifest->children());
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Prepare the list of course content
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// if(file_exists($path.'imsmanifest.xml')){
-// 	//echo "File";
-// 	echo '<frameset frameborder="0" framespacing="0" border="0" rows="*" cols="*" onbeforeunload="API.LMSFinish(\'\');" onunload="API.LMSFinish(\'\');">';
-// $SCOdata = readIMSManifestFile($path.'imsmanifest.xml');
-
-// $ORGdata=getORGdata($path.'imsmanifest.xml');
-// // echo "<html>\n";
-// foreach ($SCOdata as $identifier => $SCO)
-// {
-// 	$page[$i] = $path.cleanVar($SCO['href']);
-// 	$i++;
-// }
-// // print_r($SCOdata);
-// foreach ($ORGdata as $identifier => $ORG)
-// {
-// 	if ($ORG['identifierref']==''){  
-// 		echo "<h3>".$ORG['name']."</h3>\n";
-// 	}
-// 	else{           
-// 		$key_ref=0;
-// 		foreach ($SCOdata as $identifier_temp => $SCO)	{
-// 			if ($identifier_temp==$identifier )
-// 			{break;}
-// 			else {$key_ref++;}
-// 		}
-// 		if ($key_ref>=0){	
-// 			// echo "<h5><a href=".$page[$key_ref]."  target='course'>".$ORG['name']."</a></h5>\n";
-// 			echo '<frame src="'.$page[$key_ref].'" name="course">';
-// 		}
-// 		else{ echo "Invalid Data in - imsmanifest.xml. Check the file and try again"; return;}
-// 	}
-// }
-// echo '</frameset>';
-// }
+if(file_exists($path.'imsmanifest.xml')){
+// echo "Sdfg";
+// exit;
+	//echo "File";
+	//echo '<frameset frameborder="0" framespacing="0" border="0" rows="*" cols="*" onbeforeunload="API.LMSFinish(\'\');" onunload="API.LMSFinish(\'\');">';
+$SCOdata = readIMSManifestFile($path.'imsmanifest.xml');
+// print_r($SCOdata);
+$ORGdata=getORGdata($path.'imsmanifest.xml');
+ print_r($ORGdata);
+$scorm_version=getScormVersion($path.'imsmanifest.xml');
+ print_r($scorm_version);
+$mastery_score = getMasteryScore($path.'imsmanifest.xml');
+ print_r($mastery_score);
+// echo "<html>\n";
+foreach ($SCOdata as $identifier => $SCO)
+{
+	$page[$i] = $path.cleanVar($SCO['href']);
+	$i++;
+}
+// print_r($SCOdata);
+foreach ($ORGdata as $identifier => $ORG)
+{
+	if ($ORG['identifierref']==''){  
+		echo "<h3>".$ORG['name']."</h3>\n";
+	}
+	else{           
+		$key_ref=0;
+		foreach ($SCOdata as $identifier_temp => $SCO)	{
+			if ($identifier_temp==$identifier )
+			{break;}
+			else {$key_ref++;}
+		}
+		if ($key_ref>=0){	
+			// echo "<h5><a href=".$page[$key_ref]."  target='course'>".$ORG['name']."</a></h5>\n";
+			//echo '<frame src="'.$page[$key_ref].'" name="course">';
+		}
+		else{ echo "Invalid Data in - imsmanifest.xml. Check the file and try again"; return;}
+	}
+}
+//echo '</frameset>';
+}
+exit;
 // echo "</html>\n";
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
