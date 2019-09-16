@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-/* 
+/*
 
 VS SCORM 1.2 RTE - finish.php
 Rev 2010-04-30-01
@@ -18,7 +18,7 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin Street, Fifth Floor, 
+Foundation, Inc., 51 Franklin Street, Fifth Floor,
 Boston, MA 02110-1301, USA.
 
 */
@@ -48,9 +48,9 @@ $Remark = isset($_REQUEST['Remark']) && $_REQUEST['Remark'] !='' ? $_REQUEST['Re
 
 // if it's 'not attempted', change it to 'completed'
 if ($lessonstatus == 'not attempted') {
-// 	if ($lessonstatus == 'completed' || $lessonstatus == 'passed') {
-	writeElement('cmi.core.lesson_status','completed',$Content,$uiEvent,$eventTime , $functionCalled ,$Remark);
-// }
+    // 	if ($lessonstatus == 'completed' || $lessonstatus == 'passed') {
+    writeElement('cmi.core.lesson_status', 'completed', $Content, $uiEvent, $eventTime, $functionCalled, $Remark);
+    // }
 }
 // has a mastery score been specified in the IMS manifest file?
 $masteryscore = readElement('adlcp:masteryscore');
@@ -61,33 +61,32 @@ $masteryscore *= 1;
 // set cmi.core.entry based on the value of cmi.core.exit
 
 // clear existing value
-writeElement('cmi.core.entry','',$Content,$uiEvent,$eventTime , $functionCalled ,$Remark);
+writeElement('cmi.core.entry', '', $Content, $uiEvent, $eventTime, $functionCalled, $Remark);
 
 // new entry value depends on exit value
 $exit = readElement('cmi.core.exit');
 if (($exit === 'suspend' && $lessonstatus != 'completed') ||
  ($exit === 'suspend' && $lessonstatus != 'passed')) {
-	$uiEvent = 'suspend';
-	writeElement('cmi.core.entry','resume',$Content,$uiEvent,$eventTime , $functionCalled ,$Remark);
-}
-else if(($exit == 'suspend' && $lessonstatus == 'completed') || ($exit == 'suspend' && $lessonstatus == 'passed')) {
-	 $uiEvent = 'completed';
-	writeElement('cmi.core.entry','',$Content,$uiEvent,$eventTime , $functionCalled ,$Remark);
+    $uiEvent = 'suspend';
+    writeElement('cmi.core.entry', 'resume', $Content, $uiEvent, $eventTime, $functionCalled, $Remark);
+} 
+
+elseif (($exit == 'suspend' && $lessonstatus == 'completed') || ($exit == 'suspend' && $lessonstatus == 'passed')) {
+    $uiEvent = 'completed';
+    writeElement('cmi.core.entry', '', $Content, $uiEvent, $eventTime, $functionCalled, $Remark);
 }
 if ($masteryscore) {
 
-	// yes - so read the score
-	$rawscore = readElement('cmi.core.score.raw');
-	$rawscore *= 1;
+    // yes - so read the score
+    $rawscore = readElement('cmi.core.score.raw');
+    $rawscore *= 1;
 
-	// set cmi.core.lesson_status to passed/failed
-	if ($rawscore >= $masteryscore) {
-		writeElement('cmi.core.lesson_status','passed',$Content,$uiEvent,$eventTime , $functionCalled ,$Remark);
-	}
-	else {
-		writeElement('cmi.core.lesson_status','failed',$Content,$uiEvent,$eventTime , $functionCalled ,$Remark);
-	}
-
+    // set cmi.core.lesson_status to passed/failed
+    // if ($rawscore >= $masteryscore) {
+    //     writeElement('cmi.core.lesson_status', 'passed', $Content, $uiEvent, $eventTime, $functionCalled, $Remark);
+    // } else {
+    //     writeElement('cmi.core.lesson_status', 'failed', $Content, $uiEvent, $eventTime, $functionCalled, $Remark);
+    // }
 }
 // ------------------------------------------------------------------------------------
 // process changes to cmi.core.total_time
@@ -96,7 +95,7 @@ if ($masteryscore) {
 $totaltime = readElement('cmi.core.total_time');
 
 // convert total time to seconds
-$time = explode(':',$totaltime);
+$time = explode(':', $totaltime);
 $totalseconds = $time[0]*60*60 + $time[1]*60 + $time[2];
 
 // read the last-set cmi.core.session_time from the 'scormvars' table
@@ -104,11 +103,11 @@ $sessiontime = readElement('cmi.core.session_time');
 
 // no session time set by SCO - set to zero
 if (! $sessiontime) {
-	$sessiontime = "00:00:00";
+    $sessiontime = "00:00:00";
 }
 
 // convert session time to seconds
-$time = explode(':',$sessiontime);
+$time = explode(':', $sessiontime);
 $sessionseconds = $time[0]*60*60 + $time[1]*60 + $time[2];
 
 // new total time is ...
@@ -121,18 +120,16 @@ $totalminutes = intval($totalseconds / 60);
 $totalseconds -= $totalminutes * 60;
 
 // reformat to comply with the SCORM data model
-$totaltime = sprintf("%04d:%02d:%02d",$totalhours,$totalminutes,$totalseconds);
+$totaltime = sprintf("%04d:%02d:%02d", $totalhours, $totalminutes, $totalseconds);
 
 // save new total time to the 'scormvars' table
-writeElement('cmi.core.total_time',$totaltime,$Content,$uiEvent,$eventTime , $functionCalled ,$Remark);
+writeElement('cmi.core.total_time', $totaltime, $Content, $uiEvent, $eventTime, $functionCalled, $Remark);
 
 // delete the last session time
-writeElement('cmi.core.session_time','',$Content,$uiEvent,$eventTime , $functionCalled ,$Remark);
+writeElement('cmi.core.session_time', '', $Content, $uiEvent, $eventTime, $functionCalled, $Remark);
 
 // ------------------------------------------------------------------------------------
 
 // return value to the calling program
 print "true";
 die;
-
-?>

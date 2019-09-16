@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 /*
 
@@ -18,17 +18,10 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin Street, Fifth Floor, 
+Foundation, Inc., 51 Franklin Street, Fifth Floor,
 Boston, MA	02110-1301, USA.
 
-*/
 
-// read SCOInstanceID from the GET parameters
- $SCOInstanceID = $_GET['SCOInstanceID'] * 1;
-?>
-<?php 
-
-/* 
 
 VS SCORM 1.2 RTE - api.php
 Rev 2010-04-30-01
@@ -46,7 +39,7 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin Street, Fifth Floor, 
+Foundation, Inc., 51 Franklin Street, Fifth Floor,
 Boston, MA 02110-1301, USA.
 
 */
@@ -55,8 +48,28 @@ Boston, MA 02110-1301, USA.
 require "subs.php";
 // global $SCOInstanceID;
 // input data
+// read SCOInstanceID from the GET parameters
  $SCOInstanceID = $_REQUEST['SCOInstanceID'] * 1;
-
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Path for SCORM bundles
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//'../iSpring Demo Course (SCORM 1.2)/res/index.html';
+$path_ar = ["../Demo Captivate Quiz SCORM 1.2/",
+"../iSpring Demo Course (SCORM 1.2)/res/",
+"../WWII_Sample_sco/course/",
+"../BigBrute_daily_demo_SCORM_12-20090804-1211/course/",
+"../FMLA_Sample/course/",
+"../Quadratic_sco/course/",
+"../PuzzleQuizSCORMExport/course/",
+"../Demo Captivate Slides Scorm 1.2/",
+"../iSpring Demo Course scorm 1.2 new/res/",
+"../iSpring SCORM 1.2 Quiz with Survey/res/"
+];
+$path = $path_ar[0];
+if(file_exists($path.'imsmanifest.xml')){
+	$scorm_version=getScormVersion($path.'imsmanifest.xml');
+	// print_r($scorm_version);
+}
 //  read database login information and connect
 require "config.php";
 dbConnect();
@@ -73,6 +86,7 @@ $initializeCache = initializeSCO();
 <!-- <script src="scorm-parms.js" type="text/javascript"></script> -->
 <!--<script src="pipwerks_scorm_api_wrapper.js" type="text/javascript"></script> -->
 <script>
+	var content_provider =[];
 function createRequest() {
 	var request;
 	try {
@@ -205,7 +219,11 @@ function createRequest() {
 			request_param +='&value='+urlencode(sendData['value']);
 			request_param +='&timestamp='+urlencode(sendData['timestamp']);
 			request_param +='&activity_id='+urlencode(sendData['activity_id']);
-// 			var params = 'SCOInstanceID=&code='+d.getTime()+request_param;
+			request_param +='&result='+urlencode(sendData['result']);
+			request_param +='&registration='+urlencode(sendData['registration']);
+			request_param +='&comment='+urlencode(sendData['comment']);
+			request_param +='&mastery_score='+urlencode(sendData['mastery_score']);
+			// 			var params = 'SCOInstanceID=&code='+d.getTime()+request_param;
 // 			for(curind in cache){
 // 				params += "&data["+curind+"]="+urlencode(cache[curind]);
 // 				var unique_fld = ['cmi.core._children','cmi.core.score._children','cmi.core.student_id',
@@ -387,6 +405,8 @@ var API = (function(){
 		request_param +='&value='+urlencode(sendData['value']);
 		request_param +='&timestamp='+urlencode(sendData['timestamp']);
 		request_param +='&activity_id='+urlencode(sendData['activity_id']);
+		request_param +='&result='+urlencode(sendData['result']);
+		request_param +='&registration='+urlencode(sendData['registration']);
 // 			var params = 'SCOInstanceID=&code='+d.getTime()+request_param;
 // 			for(curind in cache){
 // 				params += "&data["+curind+"]="+urlencode(cache[curind]);
@@ -451,7 +471,7 @@ var API = (function(){
 		
 		var d = new Date();
 			var timestamp_str =d.toLocaleString();
-			console.log({'GETVAL':'',varname:varname,varvalue:cache[varname] , time:timestamp_str});
+			// console.log({'GETVAL':'',varname:varname,varvalue:cache[varname] , time:timestamp_str});
 			if(varname =='cmi.interactions._count'){
 				varvalue_count = parseInt(++interactions_count);varvalue='"'+varvalue_count+'"';
 				// console.log(varvalue_count); console.log(varvalue);
@@ -462,7 +482,7 @@ var API = (function(){
 				varvalue= (cache[varname] === undefined) ?'':cache[varname];
 // 				activity_id= (activity_id === undefined) ?'undefiend':activity_id;
 				console.log({type:'GetValue',params_key:varname,value:cache[varname],timestamp:timestamp_str,activity_id:activity_id});
-				//sendDataToAjax({type:'GetValue',params_key:varname,value:varvalue,timestamp:timestamp_str,activity_id:activity_id});
+				sendDataToAjax({type:'GetValue',params_key:varname,value:cache[varname],timestamp:timestamp_str,activity_id:activity_id,result:'slides',registration:1,comment:'',mastery_score:'50'});
 // 				xapi.changeConfig('isScorm2004',false);
 			// otherwise, return the requested data
 			return cache[varname];
@@ -485,7 +505,7 @@ var API = (function(){
 // 			varvalue= (cache[varvalue] === undefined) ?'undefiend':cache[varname];
 // 			activity_id= (activity_id === undefined) ?'undefiend':activity_id;
 			console.log({type:'SetValue',params_key:varname,value:cache[varname],timestamp:timestamp_str,activity_id:activity_id});	
-			//sendDataToAjax({type:'SetValue',params_key:varname,value:cache[varname],timestamp:timestamp_str,activity_id:activity_id});
+			sendDataToAjax({type:'SetValue',params_key:varname,value:cache[varname],timestamp:timestamp_str,activity_id:activity_id,result:'slides',registration:1,comment:'',mastery_score:'50'});
 			//this.LMSCommit('setvalue');
 			//  xAPI Extension
 			// xapi.changeConfig('isScorm2004',false);
@@ -652,30 +672,14 @@ retrieveDataValue = API.LMSGetValue;
 </head>
 <!-- <frameset frameborder="0" framespacing="0" border="0" rows="*" cols="*" onbeforeunload="doLMSFinish('');" onunload="doLMSFinish('');">-->
 <!-- <frameset frameborder="0" framespacing="0" border="0" rows="50,*" cols="*" onbeforeunload="pipwerks.SCORM.connection.terminate('');" onunload="pipwerks.SCORM.connection.terminate('');"> -->
-<?php // echo $SCOInstanceID; ?>
 <!-- <frame src="api.php?SCOInstanceID=<?php echo $SCOInstanceID ?>" name="API" noresize scrolling="no"> -->
 <!--iSpring Demo Course (SCORM 2004 4th)/ -->
 <!-- ../res/index.html -->
 <!--  -->
-<?php 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Path for SCORM bundles
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//'../iSpring Demo Course (SCORM 1.2)/res/index.html';
-// $path_ar = ["../Demo Captivate Quiz SCORM 1.2/",
-// "../iSpring Demo Course (SCORM 1.2)/res/",
-// "../WWII_Sample_sco/course/",
-// "../BigBrute_daily_demo_SCORM_12-20090804-1211/course/",
-// "../FMLA_Sample/course/",
-// "../Quadratic_sco/course/",
-// "../PuzzleQuizSCORMExport/course/",
-// "../Demo Captivate Slides Scorm 1.2/",
-// "../iSpring Demo Course scorm 1.2 new/res/",
-// "../iSpring SCORM 1.2 Quiz with Survey/res/"
-// ];
-// $path = $path_ar[0]; 
+<?php
+
 // // $path = '../Demo Captivate Quiz SCORM 1.2/';
-// $i=0;	
+// $i=0;
 // ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // // Prepare the list of course content
 // ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -686,6 +690,8 @@ retrieveDataValue = API.LMSGetValue;
 // print_r($SCOdata);
 // $ORGdata=getORGdata($path.'imsmanifest.xml');
 // print_r($ORGdata);
+// $mastery_score = getMasteryScore($path.'imsmanifest.xml');
+// print_r($mastery_score);
 // // echo "<html>\n";
 // foreach ($SCOdata as $identifier => $SCO)
 // {
@@ -695,17 +701,17 @@ retrieveDataValue = API.LMSGetValue;
 // // print_r($SCOdata);
 // foreach ($ORGdata as $identifier => $ORG)
 // {
-// 	if ($ORG['identifierref']==''){  
+// 	if ($ORG['identifierref']==''){
 // 		echo "<h3>".$ORG['name']."</h3>\n";
 // 	}
-// 	else{           
+// 	else{
 // 		$key_ref=0;
 // 		foreach ($SCOdata as $identifier_temp => $SCO)	{
 // 			if ($identifier_temp==$identifier )
 // 			{break;}
 // 			else {$key_ref++;}
 // 		}
-// 		if ($key_ref>=0){	
+// 		if ($key_ref>=0){
 // 			// echo "<h5><a href=".$page[$key_ref]."  target='course'>".$ORG['name']."</a></h5>\n";
 // 			//echo '<frame src="'.$page[$key_ref].'" name="course">';
 // 		}
@@ -720,34 +726,32 @@ retrieveDataValue = API.LMSGetValue;
 //  Make variable safe to display
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 	  sleep(2);
-	echo '<frameset frameborder="0" framespacing="0" border="0" rows="*" cols="*" onbeforeunload="API.LMSFinish(\'\');" onunload="API.LMSFinish(\'\');">';
-if($SCOInstanceID==1){
-	echo '<frame src="../Demo Captivate Quiz SCORM 1.2/index_scorm.html" name="course">';
-}else if($SCOInstanceID==2){
-	echo '<frame src="../iSpring Demo Course (SCORM 1.2)/res/index.html" name="course">';
-}else if($SCOInstanceID==3){ 
-	echo '<frame src="../WWII_Sample_sco/course/index.html" name="course">';
- }else if($SCOInstanceID==4){
-	echo '<frame src="../BigBrute_daily_demo_SCORM_12-20090804-1211/course/index_lms.html" name="course">';
-}else if($SCOInstanceID==5){
-	echo '<frame src="../FMLA_Sample/course/index_lms.html" name="course">';
-}else if($SCOInstanceID==6){
-	echo '<frame src="../Quadratic_sco/course/index.html" name="course">';
-}else if($SCOInstanceID==7){
-	echo '<frame src="../PuzzleQuizSCORMExport/course/index.html" name="course">';
-}
-else if($SCOInstanceID==8){
-	echo '<frame src="../Demo Captivate Slides Scorm 1.2/index_scorm.html" name="course">';
-}else if($SCOInstanceID==9){
-	echo '<frame src="../iSpring Demo Course scorm 1.2 new/res/index.html" name="course">';
-}
-else if($SCOInstanceID==10){
-	echo '<frame src="../iSpring SCORM 1.2 Quiz with Survey/res/index.html" name="course">';
+    echo '<frameset frameborder="0" framespacing="0" border="0" rows="*" cols="*" onbeforeunload="API.LMSFinish(\'\');" onunload="API.LMSFinish(\'\');">';
+if ($SCOInstanceID==1) {
+    echo '<frame src="../Demo Captivate Quiz SCORM 1.2/index_scorm.html" name="course">';
+} elseif ($SCOInstanceID==2) {
+    echo '<frame src="../iSpring Demo Course (SCORM 1.2)/res/index.html" name="course">';
+} elseif ($SCOInstanceID==3) {
+    echo '<frame src="../WWII_Sample_sco/course/index.html" name="course">';
+} elseif ($SCOInstanceID==4) {
+    echo '<frame src="../BigBrute_daily_demo_SCORM_12-20090804-1211/course/index_lms.html" name="course">';
+} elseif ($SCOInstanceID==5) {
+    echo '<frame src="../FMLA_Sample/course/index_lms.html" name="course">';
+} elseif ($SCOInstanceID==6) {
+    echo '<frame src="../Quadratic_sco/course/index.html" name="course">';
+} elseif ($SCOInstanceID==7) {
+    echo '<frame src="../PuzzleQuizSCORMExport/course/index.html" name="course">';
+} elseif ($SCOInstanceID==8) {
+    echo '<frame src="../Demo Captivate Slides Scorm 1.2/index_scorm.html" name="course">';
+} elseif ($SCOInstanceID==9) {
+    echo '<frame src="../iSpring Demo Course scorm 1.2 new/res/index.html" name="course">';
+} elseif ($SCOInstanceID==10) {
+    echo '<frame src="../iSpring SCORM 1.2 Quiz with Survey/res/index.html" name="course">';
 }
 //../iSpring Demo Course (SCORM 2004 4th)/res/index.html
-else{ 
-	// echo '<frame src="'.$page[$key_ref].'" name="course">';
- }	
+else {
+    // echo '<frame src="'.$page[$key_ref].'" name="course">';
+}
 ?>
 </frameset>
 </html>
